@@ -1,0 +1,62 @@
+{
+  "es": [
+    {
+      "type": "tutorial",
+      "title": "Cómo elegir el formato de laja",
+      "summary": "Dos formatos con lecturas visuales distintas.",
+      "body": "La laja irregular conserva piezas de formas y juntas variables. La recortada de largo libre organiza tiras alargadas y una lectura más lineal. Compará las imágenes de referencia y confirmá presentación y disponibilidad antes de estimar cantidades."
+    },
+    {
+      "type": "tutorial",
+      "title": "Qué datos sumar a una consulta",
+      "summary": "Una consulta completa ayuda a responder con precisión.",
+      "body": "Indicá familia y producto, presentación, superficie o cantidad estimada, localidad de entrega y plazo. El precio y la disponibilidad se confirman para cada consulta."
+    },
+    {
+      "type": "tutorial",
+      "title": "Antes de diseñar un gavión",
+      "summary": "La piedra, la malla y el proyecto deben pensarse en conjunto.",
+      "body": "La abertura de malla, la selección de piedra, el drenaje, las cargas y la estabilidad dependen del diseño y del lugar. La galería es referencial y no reemplaza la revisión de un profesional ni el cálculo del proyecto."
+    }
+  ],
+  "en": [
+    {
+      "type": "tutorial",
+      "title": "Choosing a flagstone format",
+      "summary": "Two formats with distinct visual character.",
+      "body": "Irregular flagstone keeps naturally varied shapes and joints. Free-length cut stone creates elongated pieces and a more linear look. Compare the reference images and confirm presentation and availability before estimating quantities."
+    },
+    {
+      "type": "tutorial",
+      "title": "What to include in an enquiry",
+      "summary": "A complete enquiry helps us respond accurately.",
+      "body": "Include the product family and item, presentation, estimated area or quantity, delivery location and timing. Price and availability are confirmed for each enquiry."
+    },
+    {
+      "type": "tutorial",
+      "title": "Before designing a gabion",
+      "summary": "Stone, mesh and project design need to work together.",
+      "body": "Mesh aperture, stone selection, drainage, loads and stability depend on the design and site. The gallery is illustrative and does not replace professional review or project calculations."
+    }
+  ],
+  "pt": [
+    {
+      "type": "tutorial",
+      "title": "Como escolher o formato da laje",
+      "summary": "Dois formatos com características visuais diferentes.",
+      "body": "A laje irregular mantém peças com formas e juntas variadas. A laje recortada em comprimento livre forma tiras alongadas e uma leitura mais linear. Compare as imagens de referência e confirme apresentação e disponibilidade antes de estimar as quantidades."
+    },
+    {
+      "type": "tutorial",
+      "title": "O que incluir em uma consulta",
+      "summary": "Uma consulta completa ajuda a responder com precisão.",
+      "body": "Informe a família e o produto, a apresentação, a área ou quantidade estimada, o local de entrega e o prazo. Preço e disponibilidade serão confirmados para cada consulta."
+    },
+    {
+      "type": "tutorial",
+      "title": "Antes de projetar um gabião",
+      "summary": "Pedra, malha e projeto precisam ser considerados em conjunto.",
+      "body": "A abertura da malha, a seleção da pedra, a drenagem, as cargas e a estabilidade dependem do projeto e do local. A galeria é ilustrativa e não substitui a avaliação de um profissional nem o cálculo do projeto."
+    }
+  ]
+}
