@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+<!-- zapia-tracking:v1 -->
+
+<noscript></noscript>
+
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfólio Executivo | Stonique S.A.U.</title>
+<link href="tailwind.min.css" rel="stylesheet"/>
+<style>
+        :root {
+            --jujuy-gold: #c5a059;
+            --jujuy-blue: #07132a;
+            --jujuy-slate: #1e293b;
+        }
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Portada con Hornocal */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Serran%C3%ADa_de_Hornocal_up_close_near_Humahuaca.jpg/1280px-Serran%C3%ADa_de_Hornocal_up_close_near_Humahuaca.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-bottom: 6px solid var(--jujuy-gold);
+        }
+
+        /* Stonique S.A.U. — premium typographic identity */
+        .brand-wordmark { display:inline-flex; align-items:baseline; gap:.42rem; flex:0 0 auto; padding:.38rem .85rem .38rem 0; margin-right:.15rem; border-right:1px solid rgba(217,130,91,.72); text-decoration:none !important; white-space:nowrap; line-height:1; }
+        .brand-wordmark-name { font-family:Georgia,"Times New Roman",serif; color:#f4c095; font-size:1.02rem; font-weight:700; letter-spacing:.15em; text-shadow:0 1px 10px rgba(244,192,149,.16); }
+        .brand-wordmark-legal { color:#fff2dc; font-family:Arial,sans-serif; font-size:.54rem; font-weight:800; letter-spacing:.19em; }
+        .nav-inner { gap:.65rem 1rem; }
+        .nav-brand-menu { display:flex; align-items:center; gap:.55rem; min-width:0; }
+        .nav-links { display:flex; align-items:center; gap:.08rem; }
+        .brand-eyebrow { margin:0 0 1.05rem; color:#f4c095; font-size:.66rem; font-weight:700; letter-spacing:.32em; text-transform:uppercase; text-shadow:0 2px 9px rgba(0,0,0,.42); }
+        .brand-hero-title { display:flex; align-items:baseline; justify-content:center; flex-wrap:wrap; gap:.28em; margin:0 0 1rem; font-family:Georgia,"Times New Roman",serif; font-size:clamp(2.5rem,7vw,5rem); font-weight:700; line-height:.98; letter-spacing:.09em; text-transform:uppercase; }
+        .brand-hero-main { color:#fff2dc; background:linear-gradient(108deg,#fff8eb 0%,#f4c095 54%,#d9825b 100%); background-clip:text; -webkit-background-clip:text; -webkit-text-fill-color:transparent; filter:drop-shadow(0 4px 16px rgba(0,0,0,.25)); }
+        .brand-hero-legal { display:inline-block; padding-left:.55em; border-left:1px solid rgba(244,192,149,.82); color:#ffe5c4; font-family:Arial,sans-serif; font-size:.31em; font-weight:800; letter-spacing:.2em; text-shadow:0 3px 14px rgba(0,0,0,.5); }
+        @media (max-width:1100px) { .nav-inner { flex-wrap:wrap; justify-content:center; padding-top:.35rem; padding-bottom:.35rem; } .nav-brand-menu { flex-wrap:wrap; justify-content:center; gap:.15rem .65rem; } .nav-links { flex-wrap:wrap; justify-content:center; } .nav-link { padding:.55rem .45rem; font-size:.58rem; } }
+        @media (max-width:760px) { .brand-wordmark { padding-right:.6rem; margin-right:.1rem; } .brand-wordmark-name { font-size:.92rem; } .brand-hero-title { font-size:clamp(2.2rem,11vw,3.5rem); letter-spacing:.07em; } .brand-eyebrow { font-size:.58rem; letter-spacing:.2em; } }
+        /* Navegación */
+        .nav-executive {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(7, 19, 42, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+        }
+        .nav-link {
+            color: var(--jujuy-gold);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            padding: 1.25rem 0.75rem;
+            display: inline-block;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+        }
+        .nav-link:hover, .nav-link:target {
+            color: var(--jujuy-gold);
+            border-bottom-color: var(--jujuy-gold);
+        }
+        .language-switch a {
+            color: #d9825b;
+            transition: color 0.3s ease;
+        }
+        .language-switch a:hover,
+        .language-switch a[aria-current="page"] {
+            color: #f4c095;
+        }
+        .flag {
+            display: inline-block;
+            width: 1.35em;
+            height: .9em;
+            vertical-align: -0.08em;
+            border: 1px solid rgba(7, 19, 42, .28);
+            border-radius: 1px;
+            box-shadow: 0 1px 2px rgba(0,0,0,.18);
+            position: relative;
+            overflow: hidden;
+        }
+        .flag-ar { background: linear-gradient(to bottom, #74acdf 0 33.33%, #fff 33.33% 66.66%, #74acdf 66.66%); }
+        .flag-ar::after {
+            content: '☀';
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f6b40e;
+            font-size: .58em;
+            line-height: 1;
+        }
+        .flag-gb {
+            background:
+                linear-gradient(33deg, transparent 43%, #fff 43% 57%, transparent 57%),
+                linear-gradient(-33deg, transparent 43%, #fff 43% 57%, transparent 57%),
+                linear-gradient(33deg, transparent 47%, #cf142b 47% 53%, transparent 53%),
+                linear-gradient(-33deg, transparent 47%, #cf142b 47% 53%, transparent 53%),
+                linear-gradient(to right, transparent 38%, #fff 38% 62%, transparent 62%),
+                linear-gradient(to bottom, transparent 36%, #fff 36% 64%, transparent 64%),
+                linear-gradient(to right, transparent 44%, #cf142b 44% 56%, transparent 56%),
+                linear-gradient(to bottom, transparent 41%, #cf142b 41% 59%, transparent 59%),
+                #012169;
+        }
+        .flag-br { background: #009b3a; }
+        .flag-br::before {
+            content: '';
+            position: absolute;
+            inset: 16% 23%;
+            background: #ffdf00;
+            transform: rotate(45deg);
+        }
+        .flag-br::after {
+            content: '';
+            position: absolute;
+            width: 38%;
+            height: 57%;
+            left: 31%;
+            top: 21%;
+            border-radius: 50%;
+            background: #002776;
+        }
+        .verification-status { display:inline-block; margin:.2rem 0 .55rem; padding:.25rem .5rem; border-radius:999px; font-size:.68rem; font-weight:700; letter-spacing:.03em; }
+        .verification-status.verified { color:#17633a; background:#e8f6ed; }
+        .verification-status.pending { color:#7a4b00; background:#fff3d6; }
+        .contact-panel { margin:2rem 0; padding:1.5rem; border:1px solid #eaded7; border-left:4px solid #d9825b; background:#fff8f3; }
+        .contact-panel h2 { margin:0 0 .6rem; color:#07132a; }
+        .contact-panel p { margin:.35rem 0; color:#4b5563; line-height:1.6; }
+        .catalog-note { margin:1.5rem 0; padding:1rem 1.25rem; border-left:4px solid #d9825b; background:#fff8f3; color:#4b5563; font-size:.92rem; line-height:1.6; }
+        .proposal-grid { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1rem; margin:1.5rem 0 2rem; }
+        .proposal-card { padding:1.25rem; background:#fff; border:1px solid #eaded7; border-radius:8px; box-shadow:0 5px 18px rgba(7,19,42,.06); }
+        .proposal-card h4 { margin:0 0 .65rem; color:#07132a; font-weight:800; }
+        .proposal-card p { margin:.35rem 0; color:#4b5563; font-size:.86rem; line-height:1.5; }
+        .proposal-card strong { color:#8a4329; }
+        .cta-strip { margin:2rem 0; padding:1.25rem 1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem; border-radius:8px; background:#07132a; color:#fff; }
+        .cta-strip strong { color:#f4c095; }
+        .cta-strip a { display:inline-block; padding:.7rem 1rem; border-radius:5px; background:#d9825b; color:#fff; font-weight:700; text-decoration:none; }
+        @media (max-width: 760px) { .proposal-grid { grid-template-columns:1fr; } .cta-strip { display:block; } .cta-strip a { margin-top:1rem; } }
+        /* Tablas Ejecutivas */
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            margin: 2rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: var(--jujuy-blue);
+            color: white;
+            text-align: left;
+            padding: 1rem;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+        }
+        /* Lupa interactiva: click para ampliar a 10 cm x 10 cm, sin perder definición */
+        .img-zoom-container {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .img-zoom-toggle {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+        .img-zoom-thumb {
+            display: block;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            position: relative;
+            cursor: zoom-in;
+        }
+        .img-zoom-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .img-zoom-thumb::after {
+            content: '🔍';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.25s;
+            pointer-events: none;
+            font-size: 0.8rem;
+            text-shadow: 0 1px 3px #fff;
+        }
+        .img-zoom-thumb:hover::after,
+        .img-zoom-toggle:focus + .img-zoom-thumb::after {
+            opacity: 1;
+        }
+        .img-zoom-preview {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            padding: 1rem;
+            background: rgba(7, 19, 42, 0.78);
+            cursor: zoom-out;
+        }
+        .img-zoom-preview img {
+            position: relative;
+            z-index: 1;
+            width: 10cm;
+            height: 10cm;
+            max-width: min(90vw, 10cm);
+            max-height: min(90vh, 10cm);
+            object-fit: contain;
+            display: block;
+            padding: 4px;
+            background: #fff;
+            border: 2px solid var(--jujuy-gold);
+            border-radius: 6px;
+            box-shadow: 0 12px 40px rgba(0,0,0,.45);
+            /* Se conserva la fuente original: el navegador muestra la máxima
+               calidad disponible, sin filtros ni compresión adicional. */
+            image-rendering: auto;
+        }
+        .img-zoom-toggle:checked + .img-zoom-thumb {
+            border-color: var(--jujuy-gold);
+        }
+        .img-zoom-toggle:checked ~ .img-zoom-preview {
+            display: flex;
+        }
+
+        /* Stonique — galería museística de muro gavión: marfil, piedra y líneas discretas */
+        .gabion-gallery-section { margin: 2.4rem 0 3.2rem; padding: 2.2rem clamp(1rem,3vw,2.6rem); background: #f4f1ea; border: 1px solid #d9d2c5; }
+        .gabion-gallery-heading { max-width: 820px; margin: 0 auto 2rem; text-align: center; }
+        .gabion-gallery-kicker { display:block; margin-bottom:.65rem; color:#817760; font-size:.68rem; letter-spacing:.23em; text-transform:uppercase; }
+        .gabion-gallery-heading h3 { margin:0; color:#20251f; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.45rem,2.5vw,2rem); font-weight:500; letter-spacing:.015em; }
+        .gabion-gallery-heading p { max-width:650px; margin:.75rem auto 0; color:#626259; font-size:.92rem; line-height:1.65; }
+        .gabion-gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.25rem; }
+        .gabion-card { min-width:0; overflow:hidden; background:#fbfaf7; border:1px solid #ded9cf; box-shadow:0 5px 18px rgba(34,37,31,.055); }
+        .gabion-card .img-zoom-container { position:relative; width:100%; height:300px; overflow:hidden; border:0; border-radius:0; background:#e9e6df; }
+        .gabion-card .img-zoom-thumb { position:relative; display:block; width:100%; height:100%; border:0; border-radius:0; cursor:zoom-in; }
+        .gabion-card .img-zoom-thumb img { display:block; width:100%; height:100%; padding:.65rem; object-fit:contain; background:#e9e6df; }
+        .gabion-card .img-zoom-thumb::after { content:none; }
+        .gabion-loupe { position:absolute; right:.8rem; bottom:.8rem; display:grid; width:2.35rem; height:2.35rem; place-items:center; border:1px solid rgba(197,160,89,.88); border-radius:50%; color:#f8f4eb; background:rgba(17,25,24,.9); box-shadow:0 2px 8px rgba(0,0,0,.18); }
+        .gabion-loupe svg { width:1.05rem; height:1.05rem; fill:none; stroke:currentColor; stroke-width:1.6; }
+        .gabion-card .img-zoom-toggle:focus + .img-zoom-thumb .gabion-loupe,
+        .gabion-card .img-zoom-thumb:hover .gabion-loupe { color:#1f2925; background:#e6d8b4; }
+        .gabion-card-caption { min-height:105px; padding:1rem 1.05rem 1.15rem; }
+        .gabion-card-caption small { display:block; margin-bottom:.5rem; color:#83785e; font-size:.62rem; font-weight:700; letter-spacing:.17em; }
+        .gabion-card-caption h4 { margin:0; color:#282b25; font-family:Georgia,'Times New Roman',serif; font-size:1.12rem; font-weight:500; line-height:1.35; }
+        .gabion-card-caption p { margin:.45rem 0 0; color:#66665e; font-size:.82rem; line-height:1.5; }
+        .gabion-gallery-foot { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; margin:1.25rem 0 0; padding-top:.9rem; border-top:1px solid #d8d1c5; color:#706d62; font-size:.72rem; line-height:1.55; }
+        .gabion-gallery-foot strong { flex:0 0 auto; color:#83785e; font-size:.62rem; letter-spacing:.13em; }
+        .gabion-zoom-preview { padding:1rem; }
+        .gabion-zoom-dialog { position:relative; z-index:2; display:flex; align-items:center; gap:clamp(1rem,3vw,2.2rem); width:min(960px,94vw); max-height:92vh; overflow:auto; padding:clamp(1rem,3vw,2rem); color:#282b25; background:#f6f3ec; border:1px solid #d3c8ae; box-shadow:0 20px 60px rgba(0,0,0,.28); cursor:default; }
+        .gabion-photo-frame { flex:0 0 10cm; width:10cm; height:10cm; display:grid; place-items:center; overflow:hidden; background:#e9e6df; border:1px solid #c5a059; box-shadow:0 5px 20px rgba(0,0,0,.12); }
+        .gabion-zoom-preview .gabion-photo-frame img { width:10cm; height:10cm; max-width:min(10cm,82vw); max-height:min(10cm,52vh); padding:0; object-fit:contain; border:0; border-radius:0; background:transparent; box-shadow:none; }
+        .gabion-zoom-copy { display:flex; flex-direction:column; gap:.75rem; max-width:460px; }
+        .gabion-zoom-copy .gabion-topic { color:#83785e; font-size:.62rem; font-weight:700; letter-spacing:.19em; }
+        .gabion-zoom-copy strong { color:#242a25; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.2rem,2vw,1.7rem); font-weight:500; line-height:1.2; }
+        .gabion-zoom-copy p { margin:0; color:#55574f; font-size:.88rem; line-height:1.65; }
+        .gabion-zoom-copy b { display:block; margin-bottom:.2rem; color:#82765b; font-size:.62rem; letter-spacing:.12em; }
+        .gabion-zoom-close { color:#817760; font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; }
+        @media (max-width:900px) { .gabion-gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+        @media (max-width:620px) { .gabion-gallery-grid { grid-template-columns:1fr; } .gabion-card .img-zoom-container { height:330px; } .gabion-zoom-dialog { flex-direction:column; align-items:flex-start; width:min(94vw,520px); max-height:94vh; gap:1rem; } .gabion-photo-frame { flex:0 0 auto; width:min(10cm,82vw); height:min(10cm,52vh); } .gabion-zoom-preview .gabion-photo-frame img { width:min(10cm,82vw); height:min(10cm,52vh); max-width:100%; max-height:100%; } .gabion-zoom-copy { gap:.55rem; } .gabion-zoom-copy p { font-size:.82rem; } .gabion-gallery-foot { flex-direction:column; gap:.4rem; } }
+
+        /* Secciones */
+        .section-content {
+            display: none;
+            padding: 4rem 2rem;
+            margin: 0;
+            border: 3px solid #c5a059;
+            border-radius: 0;
+            box-sizing: border-box;
+        }
+        .section-content:target {
+            display: block;
+        }
+        #home { display: block; }
+        .section-content:target ~ #home { display: none; }
+
+        /* Estilos de Galería */
+        .gallery-grid {
+            display: grid;
+            grid-template-cols: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            padding: .75rem .85rem .9rem;
+            color: #c5a059;
+            background: #07132a;
+            font-weight: 700;
+            font-size: .82rem;
+            line-height: 1.35;
+        }
+        .gallery-caption small {
+            display: block;
+            margin-top: .25rem;
+            color: rgba(255,255,255,.78);
+            font-weight: 400;
+            font-size: .72rem;
+        }
+    
+        /* Institutional section only: isolated visual treatment */
+        #institucional {
+            position: relative;
+            isolation: isolate;
+            padding: 2.5rem;
+            border-radius: 0;
+            overflow: hidden;
+            background: linear-gradient(105deg, rgba(8, 35, 65, .94), rgba(11, 54, 82, .84)), url("https://share.zapia.com/cwnfewwsb6a3oqa3su8ayg") center/cover no-repeat;
+            box-shadow: 0 18px 45px rgba(8, 35, 65, .16);
+        }
+        #institucional > h2 { color: #c5a059; border-left-color: #d9825b; margin-bottom: 1.75rem; }
+        /* All sector and subsection headings use the institutional gold */
+        .section-content h2, .section-content h3 { color: #c5a059; }
+        #institucional .institutional-intro { max-width: 900px; color: rgba(255,255,255,.86); margin: 0 auto 1.75rem; text-align: center; }
+        #institucional .institutional-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.15rem; }
+        #institucional .institutional-card { min-height: 205px; padding: 1.5rem; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+        #institucional .institutional-card h3 { margin: 0 0 .75rem; color: #f4c095; font-size: 1.05rem; letter-spacing: .12em; text-transform: uppercase; text-shadow: 0 2px 12px rgba(0,0,0,.55); }
+        #institucional .institutional-card p, #institucional .institutional-card li { color: #fff; line-height: 1.65; text-shadow: 0 2px 10px rgba(0,0,0,.7); }
+        #institucional .institutional-card ul { margin: 0; padding-left: 1.1rem; }
+        #institucional .institutional-pillars { margin-top: 1.15rem; padding: 1rem 0 0; border: 0; border-radius: 0; background: transparent; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,.7); }
+        #institucional .institutional-pillars strong { color: #f4c095; text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; }
+        #institucional .institutional-pillars span { display: inline-block; margin: .35rem .8rem 0 0; color: rgba(255,255,255,.88); font-size: .88rem; }
+        @media (max-width: 768px) {
+            #institucional { padding: 1.25rem; }
+            #institucional .institutional-cards { grid-template-columns: 1fr; }
+            #institucional .institutional-card { min-height: auto; }
+        }
+    
+        /* Ambient music player: remains mounted while section anchors change */
+        .portfolio-music {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            z-index: 110;
+            width: min(300px, calc(100vw - 2rem));
+            padding: .55rem .7rem;
+            border: 1px solid #c5a059;
+            border-radius: 0;
+            background: rgba(7, 19, 42, .94);
+            box-shadow: 0 8px 24px rgba(0,0,0,.28);
+        }
+        .portfolio-music-label {
+            display: block;
+            margin-bottom: .3rem;
+            color: #f4c095;
+            font-size: .62rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+        }
+        .portfolio-music audio { width: 100%; height: 28px; }
+    
+        /* Granza product card */
+        .granza-product { max-width:1100px; margin:1.5rem auto; overflow:hidden; border:1px solid #eaded7; border-top:4px solid #d9825b; border-radius:14px; background:#fff; box-shadow:0 16px 38px rgba(7,19,42,.09); }
+        .granza-product-head { display:flex; align-items:flex-end; justify-content:space-between; gap:1rem; padding:1.35rem 1.6rem; color:#fff; background:linear-gradient(112deg,#07132a 0%,#1e293b 72%,#4a382f 100%); }
+        .granza-brand-tag { color:#f4c095; font-size:.66rem; font-weight:800; letter-spacing:.2em; text-transform:uppercase; }
+        .granza-section-heading { display:flex; align-items:center; min-height:2.4rem; margin-bottom:1.25rem; padding-left:1rem; border-left:4px solid #d9825b !important; color:#07132a; font-family:Inter,Arial,sans-serif; font-size:clamp(1.5rem,3vw,2rem); font-weight:800; letter-spacing:.015em; text-transform:none; }
+        .granza-product-title { margin:.22rem 0 0; color:#fff8eb; font-family:Inter,Arial,sans-serif; font-size:1.65rem; font-weight:800; letter-spacing:.015em; text-transform:none; }
+        .granza-product-type { flex:0 0 auto; padding:.48rem .85rem; border:1px solid rgba(244,192,149,.56); border-radius:999px; color:#fff2dc; font-size:.82rem; font-weight:700; letter-spacing:.025em; }
+        .granza-product-body { padding:1.35rem 1.6rem 1.6rem; }
+        .granza-facts { display:grid; grid-template-columns:2fr 1fr 1fr; gap:.75rem; }
+        .granza-fact { min-width:0; padding:.95rem 1rem; border:1px solid #f0ded3; border-radius:9px; background:#fffaf6; }
+        .granza-fact strong { display:block; margin-bottom:.35rem; color:#9a5638; font-size:.77rem; font-weight:800; letter-spacing:.025em; text-transform:none; }
+        .granza-fact span { color:#142039; font-weight:600; line-height:1.55; }
+        
+        .granza-use-main { min-width:0; padding:1rem 1.1rem; border-radius:9px; margin-top:.9rem; }
+        .granza-use-main { border-left:3px solid #c5a059; background:#f7f2e8; }
+        .granza-use-main h3 { margin:0 0 .4rem; color:#07132a; font-family:Inter,Arial,sans-serif; font-size:.94rem; font-weight:800; letter-spacing:.015em; text-transform:none; }
+        .granza-use-main p { margin:0; color:#334155; line-height:1.6; }
+        
+        
+        
+        .granza-showcase { display:grid; grid-template-columns:minmax(250px,.82fr) minmax(0,1.35fr); align-items:center; gap:1.35rem; padding:1.35rem 1.6rem 1.6rem; background:linear-gradient(135deg,#fbf8f3 0%,#fff 62%,#f7f2e8 100%); }
+        .granza-reference { margin:0; padding:.75rem; border:1px solid #c5a059; border-radius:13px; background:linear-gradient(145deg,#07132a 0%,#1e293b 58%,#49392f 100%); box-shadow:0 15px 32px rgba(7,19,42,.2),inset 0 0 0 3px rgba(244,192,149,.13); }
+        .granza-reference-label { display:block; margin:0 0 .6rem; color:#f4c095; font-size:.65rem; font-weight:800; letter-spacing:.17em; text-align:center; }
+        .granza-reference-mat { padding:.4rem; border:1px solid rgba(244,192,149,.72); border-radius:8px; background:#f5eee1; box-shadow:inset 0 0 0 1px rgba(7,19,42,.12); }
+        .granza-reference-mat img { display:block; width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:4px; }
+        .granza-reference figcaption { padding:.68rem .3rem .05rem; color:#fff8eb; font-size:.82rem; font-weight:700; letter-spacing:.025em; text-align:center; }
+        .granza-showcase .granza-product-body { min-width:0; padding:0; }
+        @media (max-width:760px) { .granza-showcase { grid-template-columns:1fr; padding:1rem; gap:1rem; } .granza-reference { max-width:440px; width:100%; margin:0 auto; } .granza-reference-mat img { max-height:420px; } .granza-product-head { align-items:flex-start; flex-direction:column; padding:1.15rem; } .granza-product-title { font-size:1.55rem; } .granza-product-type { white-space:normal; } .granza-product-body { padding:1rem; } .granza-facts { grid-template-columns:1fr; } }
+    
+        /* Granza Inty: specimen tile and editorial application gallery */
+        .granza-showcase { grid-template-columns:5cm minmax(0,1fr); align-items:center; gap:1.5rem; }
+        .granza-reference { width:5cm; max-width:5cm; height:5cm; box-sizing:border-box; padding:.2rem; border:1px solid #c5a059; border-radius:10px; background:linear-gradient(145deg,#07132a,#334155); box-shadow:0 9px 22px rgba(7,19,42,.17),inset 0 0 0 2px rgba(244,192,149,.16); }
+        .granza-reference-mat { width:100%; height:100%; box-sizing:border-box; padding:.16rem; border:1px solid rgba(244,192,149,.72); border-radius:7px; background:#f5eee1; }
+        .granza-reference-zoom { position:relative; width:100%; height:100%; }
+        .granza-reference-thumb { width:100%; height:100%; box-sizing:border-box; border:0; border-radius:5px; }
+        .granza-reference-thumb img { object-fit:cover; }
+        .granza-reference-thumb::after { opacity:1; top:auto; left:auto; right:7px; bottom:7px; transform:none; width:28px; height:28px; display:grid; place-items:center; border:1px solid rgba(244,192,149,.8); border-radius:50%; background:rgba(7,19,42,.88); color:#fff; font-size:.82rem; text-shadow:none; }
+        .granza-reference-preview img { width:5cm; height:5cm; max-width:min(90vw,5cm); max-height:min(90vh,5cm); }
+        .granza-reference figcaption { width:5cm; padding:.48rem 0 0; color:#6d5b45; font-size:.68rem; font-weight:700; text-align:center; }
+        .granza-gallery { max-width:1100px; margin:2.75rem auto 1rem; padding:clamp(1.1rem,3vw,2rem); overflow:hidden; border:1px solid #e3ddd2; border-radius:18px; background:radial-gradient(ellipse at 92% 0%,rgba(197,160,89,.12),transparent 34%),#f8f6f1; box-shadow:0 22px 55px rgba(7,19,42,.09); }
+        .granza-gallery-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:1rem; margin-bottom:1.25rem; }
+        .granza-gallery-kicker { color:#9a7041; font-size:.63rem; font-weight:800; letter-spacing:.2em; }
+        .granza-gallery-heading h3 { margin:.35rem 0 .45rem; color:#07132a; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.65rem,3vw,2.35rem); font-weight:500; letter-spacing:-.025em; }
+        .granza-gallery-heading p { max-width:640px; margin:0; color:#5f6470; font-size:.9rem; line-height:1.65; }
+        .granza-gallery-index { flex:0 0 auto; display:flex; align-items:baseline; gap:.4rem; padding:.55rem .8rem; border-top:1px solid #c5a059; border-bottom:1px solid #c5a059; color:#07132a; font-family:Georgia,'Times New Roman',serif; }
+        .granza-gallery-index strong { font-size:1.35rem; font-weight:500; }
+        .granza-gallery-index span { color:#78716c; font:700 .62rem Arial,sans-serif; letter-spacing:.1em; }
+        .granza-filter-input { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+        .granza-gallery-filters { display:flex; flex-wrap:wrap; gap:.45rem; margin:1.35rem 0 1rem; }
+        .granza-gallery-filters label { display:inline-flex; align-items:center; min-height:34px; padding:.48rem .82rem; border:1px solid #ded8cd; border-radius:999px; background:#fff; color:#5d5c56; cursor:pointer; font-size:.73rem; font-weight:700; transition:all .2s ease; }
+        .granza-gallery-filters label:hover { border-color:#b48c50; color:#07132a; }
+        .granza-gallery-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+        .granza-art-card { min-width:0; margin:0; overflow:hidden; border:1px solid #e5e0d7; border-radius:12px; background:#fff; box-shadow:0 6px 20px rgba(7,19,42,.06); transition:transform .25s ease,box-shadow .25s ease; }
+        .granza-art-card:hover { transform:translateY(-4px); box-shadow:0 14px 30px rgba(7,19,42,.13); }
+        .granza-art-media { position:relative; overflow:hidden; aspect-ratio:4/3; background:#e8e1d5; }
+        .granza-art-trigger { position:absolute; inset:0; width:100%; height:100%; box-sizing:border-box; border:0; border-radius:0; background:transparent; cursor:zoom-in; }
+        .granza-art-trigger img { width:100%; height:100%; object-fit:cover; transition:transform .45s cubic-bezier(.2,.7,.2,1); }
+        .granza-art-card:hover .granza-art-trigger img { transform:scale(1.035); }
+        .granza-art-trigger::after { display:none; }
+        .granza-art-zoom { position:absolute; right:11px; bottom:11px; display:grid; width:34px; height:34px; place-items:center; border:1px solid rgba(244,192,149,.8); border-radius:50%; background:rgba(7,19,42,.88); color:#fff; font-size:.88rem; box-shadow:0 3px 10px rgba(0,0,0,.22); }
+        .granza-art-index { position:absolute; top:11px; left:11px; padding:.32rem .48rem; border:1px solid rgba(255,255,255,.65); border-radius:4px; background:rgba(7,19,42,.74); color:#fff; font-size:.62rem; font-weight:800; letter-spacing:.12em; pointer-events:none; }
+        .granza-art-preview img { width:10cm; height:10cm; max-width:min(90vw,10cm); max-height:min(90vh,10cm); }
+        .granza-art-caption { min-height:116px; padding:.95rem 1rem 1.05rem; }
+        .granza-art-caption .granza-art-category { display:block; margin-bottom:.42rem; color:#9a7041; font-size:.59rem; font-weight:800; letter-spacing:.16em; }
+        .granza-art-caption h4 { margin:0; color:#07132a; font-family:Georgia,'Times New Roman',serif; font-size:1.1rem; font-weight:500; line-height:1.3; }
+        .granza-art-caption p { margin:.55rem 0 0; color:#8a8175; font-size:.66rem; font-weight:600; letter-spacing:.035em; }
+        .granza-gallery-note { margin:1rem 0 0; padding-top:.75rem; border-top:1px solid #e7e1d7; color:#78716c; font-size:.69rem; line-height:1.5; }
+        #granza-filter-path:checked ~ .granza-gallery-filters label[for="granza-filter-path"],#granza-filter-land:checked ~ .granza-gallery-filters label[for="granza-filter-land"],#granza-filter-drain:checked ~ .granza-gallery-filters label[for="granza-filter-drain"],#granza-filter-all:checked ~ .granza-gallery-filters label[for="granza-filter-all"] { border-color:#07132a; background:#07132a; color:#fff; box-shadow:0 3px 10px rgba(7,19,42,.15); }
+        #granza-filter-path:checked ~ .granza-gallery-grid .category-land,#granza-filter-path:checked ~ .granza-gallery-grid .category-drain,#granza-filter-land:checked ~ .granza-gallery-grid .category-path,#granza-filter-land:checked ~ .granza-gallery-grid .category-drain,#granza-filter-drain:checked ~ .granza-gallery-grid .category-path,#granza-filter-drain:checked ~ .granza-gallery-grid .category-land { display:none; }
+        @media (max-width:760px) { .granza-showcase { grid-template-columns:1fr; justify-items:center; } .granza-showcase .granza-product-body { width:100%; } .granza-gallery { margin:2rem auto .5rem; border-radius:14px; } .granza-gallery-heading { align-items:flex-start; } .granza-gallery-index { margin-top:.2rem; } .granza-gallery-grid { grid-template-columns:1fr; gap:.8rem; } .granza-art-card { display:grid; grid-template-columns:minmax(118px,.82fr) minmax(0,1fr); align-items:stretch; } .granza-art-media { min-height:100%; aspect-ratio:1/1; } .granza-art-caption { min-height:0; align-self:center; padding:.8rem; } .granza-art-caption h4 { font-size:1rem; } .granza-reference { margin:0 auto; } }
+    
+        /* Granza Gris Volcan — adaptable application gallery */
+        .granza-volcan-gallery .granza-gallery-grid { grid-template-columns:minmax(0,1fr); }
+        .granza-volcan-gallery .granza-art-card { display:grid; grid-template-columns:minmax(250px,.95fr) minmax(0,1.05fr); max-width:900px; }
+        .granza-volcan-gallery .granza-art-media { min-height:420px; max-height:520px; aspect-ratio:auto; background:#e8e6e0; }
+        .granza-volcan-gallery .granza-art-trigger img { object-fit:contain; background:#e8e6e0; }
+        .granza-volcan-gallery .granza-art-caption { align-self:center; min-height:0; padding:clamp(1.2rem,4vw,2.6rem); }
+        .granza-volcan-gallery .granza-gallery-index { gap:.35rem; }
+        #granza-volcan-filter-path:checked ~ .granza-gallery-filters label[for="granza-volcan-filter-path"],#granza-volcan-filter-land:checked ~ .granza-gallery-filters label[for="granza-volcan-filter-land"],#granza-volcan-filter-all:checked ~ .granza-gallery-filters label[for="granza-volcan-filter-all"] { border-color:#07132a; background:#07132a; color:#fff; box-shadow:0 3px 10px rgba(7,19,42,.15); }
+        #granza-volcan-filter-path:checked ~ .granza-gallery-grid .category-volcan-land:not(.category-volcan-path),#granza-volcan-filter-land:checked ~ .granza-gallery-grid .category-volcan-path:not(.category-volcan-land) { display:none; }
+        @media (max-width:760px) { .granza-volcan-gallery .granza-art-card { grid-template-columns:minmax(118px,.82fr) minmax(0,1fr); } .granza-volcan-gallery .granza-art-media { min-height:230px; max-height:320px; aspect-ratio:3/4; } .granza-volcan-gallery .granza-art-caption { padding:.8rem; } }
+    
+        /* Granza Roja Siena — photographic application gallery */
+        .granza-siena-gallery .granza-gallery-grid { grid-template-columns:minmax(0,1fr); }
+        .granza-siena-gallery .granza-art-card { display:grid; grid-template-columns:minmax(180px,.58fr) minmax(0,1fr); max-width:900px; }
+        .granza-siena-gallery .granza-art-media { min-height:0; aspect-ratio:149/300; background:#e8e6e0; }
+        .granza-siena-gallery .granza-art-trigger img { object-fit:contain; background:#e8e6e0; }
+        .granza-siena-gallery .granza-art-caption { align-self:center; min-height:0; padding:clamp(1.1rem,4vw,2.4rem); }
+        #granza-siena-filter-path:checked ~ .granza-gallery-filters label[for="granza-siena-filter-path"],#granza-siena-filter-land:checked ~ .granza-gallery-filters label[for="granza-siena-filter-land"],#granza-siena-filter-all:checked ~ .granza-gallery-filters label[for="granza-siena-filter-all"] { border-color:#07132a; background:#07132a; color:#fff; box-shadow:0 3px 10px rgba(7,19,42,.15); }
+        #granza-siena-filter-path:checked ~ .granza-gallery-grid .category-siena-land:not(.category-siena-path),#granza-siena-filter-land:checked ~ .granza-gallery-grid .category-siena-path:not(.category-siena-land) { display:none; }
+        @media (max-width:760px) { .granza-siena-gallery .granza-art-card { grid-template-columns:minmax(115px,.65fr) minmax(0,1fr); } .granza-siena-gallery .granza-art-media { aspect-ratio:149/300; } .granza-siena-gallery .granza-art-caption { padding:.8rem; } }
+    
+        /* Granza application galleries use a compact scale and the shared magnifier. */
+        .granza-art-media > img { display:block; width:100%; height:100%; object-fit:cover; }
+        .granza-volcan-gallery .granza-gallery-grid,.granza-siena-gallery .granza-gallery-grid { grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); }
+        .granza-volcan-gallery .granza-art-card,.granza-siena-gallery .granza-art-card { display:block; max-width:none; }
+        .granza-volcan-gallery .granza-art-media,.granza-siena-gallery .granza-art-media { width:auto; min-height:0; max-height:none; aspect-ratio:4/3; }
+        .granza-volcan-gallery .granza-art-media > img,.granza-siena-gallery .granza-art-media > img { object-fit:contain; background:#eeeae2; }
+        .granza-volcan-gallery .granza-art-caption,.granza-siena-gallery .granza-art-caption { min-height:116px; padding:.95rem 1rem 1.05rem; }
+        @media (max-width:760px) { .granza-volcan-gallery .granza-art-card,.granza-siena-gallery .granza-art-card { display:grid; grid-template-columns:minmax(118px,.82fr) minmax(0,1fr); } .granza-volcan-gallery .granza-art-media,.granza-siena-gallery .granza-art-media { min-height:100%; max-height:none; aspect-ratio:1/1; } .granza-volcan-gallery .granza-art-caption,.granza-siena-gallery .granza-art-caption { min-height:0; padding:.8rem; } }
+    
+        /* Three parallel use studies per aggregate, with accessible CSS-only filters. */
+        #granza-volcan-filter-drain:checked ~ .granza-gallery-filters label[for="granza-volcan-filter-drain"],#granza-siena-filter-drain:checked ~ .granza-gallery-filters label[for="granza-siena-filter-drain"],#granza-bayo-filter-drain:checked ~ .granza-gallery-filters label[for="granza-bayo-filter-drain"],#granza-bayo-filter-path:checked ~ .granza-gallery-filters label[for="granza-bayo-filter-path"],#granza-bayo-filter-land:checked ~ .granza-gallery-filters label[for="granza-bayo-filter-land"],#granza-bayo-filter-all:checked ~ .granza-gallery-filters label[for="granza-bayo-filter-all"] { border-color:#07132a; background:#07132a; color:#fff; box-shadow:0 3px 10px rgba(7,19,42,.15); }
+        #granza-volcan-filter-path:checked ~ .granza-gallery-grid .category-volcan-land,#granza-volcan-filter-path:checked ~ .granza-gallery-grid .category-volcan-drain,#granza-volcan-filter-land:checked ~ .granza-gallery-grid .category-volcan-path,#granza-volcan-filter-land:checked ~ .granza-gallery-grid .category-volcan-drain,#granza-volcan-filter-drain:checked ~ .granza-gallery-grid .category-volcan-path,#granza-volcan-filter-drain:checked ~ .granza-gallery-grid .category-volcan-land { display:none; }
+        #granza-siena-filter-path:checked ~ .granza-gallery-grid .category-siena-land,#granza-siena-filter-path:checked ~ .granza-gallery-grid .category-siena-drain,#granza-siena-filter-land:checked ~ .granza-gallery-grid .category-siena-path,#granza-siena-filter-land:checked ~ .granza-gallery-grid .category-siena-drain,#granza-siena-filter-drain:checked ~ .granza-gallery-grid .category-siena-path,#granza-siena-filter-drain:checked ~ .granza-gallery-grid .category-siena-land { display:none; }
+        #granza-bayo-filter-path:checked ~ .granza-gallery-grid .category-bayo-land,#granza-bayo-filter-path:checked ~ .granza-gallery-grid .category-bayo-drain,#granza-bayo-filter-land:checked ~ .granza-gallery-grid .category-bayo-path,#granza-bayo-filter-land:checked ~ .granza-gallery-grid .category-bayo-drain,#granza-bayo-filter-drain:checked ~ .granza-gallery-grid .category-bayo-path,#granza-bayo-filter-drain:checked ~ .granza-gallery-grid .category-bayo-land { display:none; }
+        .granza-bayo-gallery .granza-gallery-grid { grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); }
+            .granza-bayo-gallery .category-bayo-path .granza-art-media > img { object-fit:contain; background:#eeeae2; }
+
+        /* Audiovisual portfolio — responsive, CSS-only category filtering, no JS. */
+        .audiovisual-section { background:#15191e; color:#f4f0e8; border-color:#c5a059; }
+        .audiovisual-section h2,.audiovisual-section h3 { color:#f0d5a0 !important; }
+        .av-header { max-width:940px; margin:0 auto 2.2rem; text-align:center; }
+        .av-eyebrow { display:block; margin-bottom:.8rem; color:#d9b978; font-size:.68rem; font-weight:700; letter-spacing:.2em; }
+        .av-header h2 { margin-bottom:1rem; font-size:clamp(1.8rem,4vw,3rem); letter-spacing:.07em; }
+        .av-header p { max-width:760px; margin:0 auto; color:#d4d0c8; line-height:1.75; }
+        .av-featured { position:relative; isolation:isolate; display:grid; align-items:end; width:min(100%,1120px); aspect-ratio:16/9; min-height:260px; margin:0 auto 2rem; overflow:hidden; border:1px solid rgba(240,213,160,.4); background:#20252a; box-shadow:0 22px 60px rgba(0,0,0,.32); }
+        .av-featured > img { position:absolute; inset:0; z-index:-2; width:100%; height:100%; object-fit:cover; opacity:.66; }
+        .av-featured::after { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg,rgba(7,12,17,.9),rgba(7,12,17,.46) 60%,rgba(7,12,17,.15)),linear-gradient(0deg,rgba(7,12,17,.58),transparent 70%); }
+        .av-featured-copy { max-width:760px; padding:clamp(1.25rem,5vw,3.5rem); }
+        .av-kicker { display:inline-flex; align-items:center; gap:.55rem; margin-bottom:.9rem; color:#f0d5a0; font-size:.68rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+        .av-featured-copy h3 { margin:0 0 .65rem; color:#fff !important; font:700 clamp(1.35rem,3.3vw,2.5rem)/1.12 Georgia,serif; }
+        .av-featured-copy p { margin:0; color:#f0ede6; line-height:1.6; }
+        .av-pending { display:inline-flex; margin-top:1.2rem; padding:.5rem .75rem; border:1px solid rgba(240,213,160,.65); background:rgba(9,14,18,.55); color:#f4e7cb; font-size:.72rem; letter-spacing:.04em; }
+        .av-filter-input { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; }
+        .av-filters { display:flex; flex-wrap:wrap; justify-content:center; gap:.55rem; margin:0 auto 1.5rem; }
+        .av-filters label { padding:.65rem .95rem; border:1px solid rgba(240,213,160,.42); border-radius:999px; color:#e8e2d7; background:rgba(255,255,255,.035); cursor:pointer; font-size:.78rem; transition:background .2s,border-color .2s,color .2s; }
+        .av-filters label:hover { border-color:#f0d5a0; color:#fff; }
+        #av-all:checked ~ .av-filters label[for="av-all"],#av-install:checked ~ .av-filters label[for="av-install"],#av-exterior:checked ~ .av-filters label[for="av-exterior"],#av-interior:checked ~ .av-filters label[for="av-interior"] { border-color:#d9b978; background:#d9b978; color:#15191e; }
+        #av-install:focus-visible ~ .av-filters label[for="av-install"],#av-exterior:focus-visible ~ .av-filters label[for="av-exterior"],#av-interior:focus-visible ~ .av-filters label[for="av-interior"],#av-all:focus-visible ~ .av-filters label[for="av-all"] { outline:3px solid #fff; outline-offset:3px; }
+        .av-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.15rem; max-width:1120px; margin:0 auto; }
+        .av-card { min-width:0; overflow:hidden; border:1px solid rgba(240,213,160,.2); background:#20252a; box-shadow:0 12px 30px rgba(0,0,0,.2); }
+        .av-card[hidden] { display:none; }
+        #av-install:checked ~ .av-grid .av-card:not(.cat-install),#av-exterior:checked ~ .av-grid .av-card:not(.cat-exterior),#av-interior:checked ~ .av-grid .av-card:not(.cat-interior) { display:none; }
+        .av-poster { position:relative; aspect-ratio:16/9; overflow:hidden; background:linear-gradient(135deg,#40464b,#171b20 58%,#6a5540); }
+        .av-poster img { display:block; width:100%; height:100%; object-fit:cover; opacity:.72; transition:transform .5s,opacity .4s; }
+        .av-card:hover .av-poster img { transform:scale(1.04); opacity:.9; }
+        .av-play { position:absolute; top:50%; left:50%; display:grid; place-items:center; width:3.3rem; height:3.3rem; border:1px solid rgba(255,255,255,.78); border-radius:50%; background:rgba(12,16,19,.63); color:white; font-size:1.1rem; transform:translate(-50%,-50%); }
+        .av-poster-note { position:absolute; right:.65rem; bottom:.6rem; padding:.32rem .5rem; background:rgba(8,12,15,.82); color:#f5e7cc; font-size:.61rem; }
+        .av-card-copy { padding:1rem 1rem 1.15rem; }
+        .av-card-cat { display:block; margin-bottom:.45rem; color:#d9b978; font-size:.62rem; font-weight:700; letter-spacing:.13em; }
+        .av-card h3 { margin:0 0 .4rem; color:#fff !important; font:700 1.05rem/1.35 Georgia,serif; }
+        .av-card p { margin:0; color:#c8c5bf; font-size:.78rem; line-height:1.5; }
+        .av-note { max-width:1120px; margin:1.25rem auto 0; color:#aaa8a2; font-size:.72rem; line-height:1.6; text-align:center; }
+        @media (max-width:900px) { .av-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+        @media (max-width:760px) { .av-grid { grid-template-columns:1fr; } .av-featured { min-height:240px; aspect-ratio:4/3; } .av-featured-copy { padding:1.2rem; } .av-filters { justify-content:flex-start; } .av-filters label { font-size:.72rem; } }
+    
+        /* Imagen de portada para el apartado de muro gavión */
+        .gabion-featured { display:grid; grid-template-columns:minmax(0,1.42fr) minmax(280px,.78fr); margin:0 0 2rem; overflow:hidden; background:#fbfaf7; border:1px solid #d6d0c4; box-shadow:0 12px 34px rgba(34,37,31,.085); }
+        .gabion-featured .gabion-featured-media { position:relative; width:100%; height:auto; min-height:0; aspect-ratio:1.86; border:0; border-radius:0; background:#ded9d0; }
+        .gabion-featured .img-zoom-thumb { position:relative; display:block; width:100%; height:100%; border:0; border-radius:0; }
+        .gabion-featured .img-zoom-thumb img { display:block; width:100%; height:100%; padding:0; object-fit:cover; background:#ded9d0; }
+        .gabion-featured .gabion-loupe { right:1rem; bottom:1rem; width:2.8rem; height:2.8rem; }
+        .gabion-featured-copy { display:flex; flex-direction:column; justify-content:center; padding:clamp(1.4rem,3.5vw,3rem); }
+        .gabion-featured-kicker { display:block; margin-bottom:.8rem; color:#84795f; font-size:.63rem; font-weight:700; letter-spacing:.2em; }
+        .gabion-featured-copy h4 { margin:0; color:#262923; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.5rem,2.6vw,2.3rem); font-weight:500; line-height:1.12; }
+        .gabion-featured-copy p { margin:.9rem 0 0; color:#5e6058; font-size:.9rem; line-height:1.7; }
+        .gabion-featured-rule { width:3.2rem; height:1px; margin-top:1.25rem; background:#b7a47d; }
+        @media (max-width:900px) { .gabion-featured { grid-template-columns:1fr; } .gabion-featured .gabion-featured-media { aspect-ratio:1.86; } }
+        @media (max-width:620px) { .gabion-featured .gabion-featured-media { aspect-ratio:1.55; } .gabion-featured-copy { padding:1.25rem 1.2rem 1.5rem; } .gabion-featured-copy p { font-size:.84rem; } }
+
+    
+        /* Filtros de mobiliario en gavion, accesibles y sin scripts */
+        .furniture-filter-input { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); clip-path:inset(50%); white-space:nowrap; }
+        .furniture-filterbar { display:flex; justify-content:center; flex-wrap:wrap; gap:.55rem; margin:-.45rem 0 1.4rem; }
+        .furniture-filterbar label { padding:.52rem .95rem; color:#55574f; background:#fbfaf7; border:1px solid #d9d2c5; border-radius:999px; font-size:.76rem; letter-spacing:.035em; cursor:pointer; transition:color .2s ease,background .2s ease,border-color .2s ease; }
+        .furniture-filterbar label:hover { border-color:#a99773; color:#282b25; }
+        .furniture-filter-input:focus-visible ~ .furniture-filterbar label { outline:2px solid #9f8753; outline-offset:3px; }
+        .furniture-gallery-grid .furniture-card { transition:transform .25s ease,box-shadow .25s ease; }
+        .furniture-gallery-grid .furniture-card:hover { transform:translateY(-3px); box-shadow:0 10px 26px rgba(34,37,31,.11); }
+        .furniture-gallery-grid .furniture-card .img-zoom-thumb img { transition:transform .45s ease; }
+        .furniture-gallery-grid .furniture-card .img-zoom-thumb:hover img { transform:scale(1.025); }
+
+        #furn-pt-all:checked ~ .furniture-filterbar label[for="furn-pt-all"] { color:#f7f4ec; background:#26312c; border-color:#26312c; }
+        #furn-pt-seats:checked ~ .furniture-filterbar label[for="furn-pt-seats"] { color:#f7f4ec; background:#26312c; border-color:#26312c; }
+        #furn-pt-fire:checked ~ .furniture-filterbar label[for="furn-pt-fire"] { color:#f7f4ec; background:#26312c; border-color:#26312c; }
+        #furn-pt-seats:checked ~ .furniture-gallery-grid .furniture-card:not(.furniture-seat) { display:none; }
+        #furn-pt-fire:checked ~ .furniture-gallery-grid .furniture-card:not(.furniture-fire) { display:none; }
+    
+        #furn-pt-garden:checked ~ .furniture-filterbar label[for="furn-pt-garden"] { color:#f7f4ec; background:#26312c; border-color:#26312c; }
+        #furn-pt-garden:checked ~ .furniture-gallery-grid .furniture-card:not(.furniture-garden) { display:none; }
+    
+        .product-image-note { display:flex; align-items:center; justify-content:center; width:110px; height:110px; padding:.5rem; border:1px solid #eaded7; border-radius:5px; background:#fff8f3; color:#75664d; font-size:.68rem; line-height:1.4; text-align:center; }
+        @media (max-width:760px) { .product-image-note { width:88px; height:88px; } }
+        .audiovisual-section .av-featured { background:radial-gradient(circle at 78% 28%,rgba(217,185,120,.17),transparent 28%),linear-gradient(135deg,#333a3f,#171b20 62%,#554535); }
+
+    
+        /* Lupa CSS-only para aplicaciones de granza: marco de ampliación 10 x 10 cm. */
+        .granza-art-media > .granza-art-zoom-container { position:absolute; inset:0; z-index:1; display:block; width:100%; height:100%; overflow:visible; }
+        .granza-art-zoom-container .img-zoom-thumb { display:block; width:100%; height:100%; border:0; border-radius:0; cursor:zoom-in; }
+        .granza-art-zoom-container .img-zoom-thumb::after { content:none; }
+        .granza-art-zoom-container .img-zoom-thumb img { display:block; width:100%; height:100%; padding:0; object-fit:cover; background:#eeeae2; }
+        .granza-art-zoom-container .img-zoom-preview { z-index:15000; }
+        .granza-art-zoom { position:absolute; right:11px; bottom:11px; display:grid; width:34px; height:34px; place-items:center; border:1px solid rgba(244,192,149,.8); border-radius:50%; background:rgba(7,19,42,.9); color:#fff; box-shadow:0 3px 10px rgba(0,0,0,.22); pointer-events:none; }
+        .granza-art-zoom svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:1.7; }
+        .granza-art-index { z-index:2; }
+        .granza-volcan-gallery .granza-art-zoom-container .img-zoom-thumb img,.granza-siena-gallery .granza-art-zoom-container .img-zoom-thumb img,.granza-bayo-gallery .category-bayo-path .granza-art-zoom-container .img-zoom-thumb img { object-fit:contain; background:#eeeae2; }
+        .granza-art-card:hover { transform:none; }
+        .furniture-gallery-grid .furniture-card:hover { transform:none; }
+
+    
+        /* Corrección común de ampliación: marco exacto, capa estable y cierre por toque. */
+        .img-zoom-container { position:relative; }
+        .img-zoom-preview { box-sizing:border-box; width:100vw; height:100vh; max-width:100vw; max-height:100vh; margin:0; padding:1rem; overflow:auto; transform:none; }
+        .img-zoom-preview::before { content:none; }
+        .img-zoom-preview img { box-sizing:border-box; width:10cm; height:10cm; max-width:min(90vw,10cm); max-height:min(90vh,10cm); object-fit:contain; }
+        .img-zoom-preview.granza-reference-preview img { width:5cm; height:5cm; max-width:min(90vw,5cm); max-height:min(90vh,5cm); }
+        .img-zoom-toggle:focus-visible + .img-zoom-thumb { outline:3px solid #c5a059; outline-offset:2px; }
+        .img-zoom-preview { -webkit-overflow-scrolling:touch; }
+    
+        /* Compact, zoomable reference images for each slate presentation row. */
+        .laja-reference-cell { width:88px; min-width:82px; padding:.45rem!important; text-align:center; vertical-align:middle; }
+        .laja-table-zoom { display:inline-block; width:64px; height:64px; vertical-align:middle; }
+        .laja-table-zoom .laja-reference-thumb { width:64px; height:64px; box-sizing:border-box; border:1px solid #c5a059; border-radius:5px; }
+        .laja-table-zoom .laja-reference-thumb img { object-fit:cover; }
+        .laja-table-zoom .laja-reference-thumb::after { opacity:1; top:auto; left:auto; right:4px; bottom:4px; transform:none; display:grid; place-items:center; width:20px; height:20px; border:1px solid rgba(244,192,149,.8); border-radius:50%; background:rgba(7,19,42,.88); color:#fff; font-size:.68rem; text-shadow:none; }
+    
+        .verification-status.reference { color:#425466; background:#f1f3f5; }
+        .trust-strip { margin:1.5rem 0; padding:1.25rem 1.5rem; border:1px solid #eaded7; border-radius:8px; background:linear-gradient(110deg,#fff8f3,#fff); }
+        .trust-strip h3 { margin:0 0 .5rem; color:#07132a; }
+        .trust-strip p { margin:0; color:#4b5563; line-height:1.6; }
+
+        /* Contact accordion: semantic HTML details/summary; no JavaScript or embedded form. */
+        .contact-accordion { margin:2rem 0 3rem; overflow:hidden; border:1px solid rgba(197,160,89,.46); border-radius:10px; background:#fff; box-shadow:0 8px 24px rgba(7,19,42,.08); }
+        .contact-accordion-summary { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1.05rem 1.25rem; list-style:none; cursor:pointer; color:#fff2dc; background:#07132a; border-left:4px solid #d9825b; }
+        .contact-accordion-summary::-webkit-details-marker { display:none; }
+        .contact-accordion-summary::marker { content:""; }
+        .contact-accordion-summary:hover { background:#12233b; }
+        .contact-accordion-summary:focus-visible { outline:3px solid #f4c095; outline-offset:-3px; }
+        .contact-accordion-title { color:#fff2dc; font-family:Georgia,"Times New Roman",serif; font-size:1.35rem; font-weight:700; letter-spacing:.02em; }
+        .contact-accordion-action { display:inline-flex; align-items:center; gap:.65rem; color:#f4c095; font-size:.72rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+        .contact-accordion-action::after { content:"+"; display:inline-flex; width:1.8rem; height:1.8rem; align-items:center; justify-content:center; border:1px solid rgba(244,192,149,.65); border-radius:50%; font-size:1.15rem; line-height:1; }
+        .contact-accordion[open] .contact-accordion-action::after { content:"−"; }
+        .contact-accordion-body { padding:1.25rem 1.4rem 1.5rem; }
+        .contact-accordion-body > p:first-child { margin:.25rem 0 1rem; color:#4b5563; line-height:1.65; }
+        @media (max-width:640px) { .contact-accordion-summary { align-items:flex-start; padding:.95rem; } .contact-accordion-title { font-size:1.1rem; } .contact-accordion-action { gap:.4rem; font-size:.62rem; } .contact-accordion-body { padding:1rem; } }
+
+    </style>
+<meta content="website" property="og:type"/>
+<meta content="Portfólio Executivo | Stonique S.A.U." property="og:title"/>
+<meta content="Stonique S.A.U. — pedra natural de Jujuy para arquitetura, construção e distribuição." property="og:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+</head>
+<body>
+<nav class="nav-executive">
+<div class="nav-inner max-w-7xl mx-auto px-4 flex justify-between items-center">
+<div class="nav-brand-menu">
+<a aria-label="Stonique S.A.U." class="brand-wordmark" href="#home"><span class="brand-wordmark-name">STONIQUE</span><span class="brand-wordmark-legal">S.A.U.</span></a>
+<div class="nav-links">
+<a class="nav-link" href="#institucional">Institucional</a>
+<a class="nav-link" href="#laja">Pedra Laje</a>
+<a class="nav-link" href="#granza">Agregados</a>
+<a class="nav-link" href="#gavion">Gabião &amp; Mobiliário</a>
+<a class="nav-link" href="#contacto">Contato</a>
+</div>
+</div>
+<div class="language-switch flex items-center space-x-3 text-[10px] font-bold uppercase">
+<a href="./"><span aria-hidden="true" class="flag flag-ar"></span></a> | 
+                <a href="index-en.html"><span aria-hidden="true" class="flag flag-gb"></span></a> | 
+                <a aria-current="page" class="underline" href="index-pt.html"><span aria-hidden="true" class="flag flag-br"></span></a>
+</div>
+</div>
+</nav>
+<div id="home">
+<header class="hero">
+<div>
+<p class="brand-eyebrow">PEDRA NATURAL · JUJUY, ARGENTINA</p>
+<h1 class="brand-hero-title"><span class="brand-hero-main">Stonique</span><span class="brand-hero-legal">S.A.U.</span></h1>
+<p class="text-xl md:text-2xl font-light tracking-wide opacity-90 max-w-2xl mx-auto">Excelência em mineração social, artesanal e produtiva no coração do NOA.</p>
+<div class="mt-10">
+<a class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-gray-100 transition" href="#institucional">Acessar</a>
+</div>
+</div>
+</header>
+</div>
+<main class="max-w-7xl mx-auto px-4">
+<!-- 1. INSTITUCIONAL -->
+<section class="section-content" id="institucional">
+<h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-yellow-500 pl-4">Institucional</h2>
+<p class="institutional-intro">A Stonique S.A.U. articula produção, identidade territorial e desenvolvimento responsável para projetar os minerais de Jujuy.</p>
+<div class="institutional-cards">
+<article class="institutional-card">
+<h3>Missão</h3>
+<p>Representar, apoiar e impulsionar os produtores da Mineração Social Artesanal de Jujuy, promovendo a formalização, o trabalho seguro, o valor agregado na origem e a comercialização direta.</p>
+</article>
+<article class="institutional-card">
+<h3>Visão</h3>
+<p>Ser uma empresa de referência no NOA, reconhecida por impulsionar uma mineração sustentável, inovadora e competitiva, enraizada nas comunidades e voltada aos mercados nacionais e internacionais.</p>
+</article>
+<article class="institutional-card">
+<h3>Objetivos</h3>
+<ul>
+<li>Valorizar a produção mineral de Jujuy.</li>
+<li>Promover capacitação e segurança no trabalho.</li>
+<li>Conectar produtores a novos mercados.</li>
+<li>Preservar o patrimônio natural e cultural.</li>
+</ul>
+</article>
+</div>
+<div class="institutional-pillars"><strong>Nossos pilares</strong><br/>
+<span>✦ Desenvolvimento sustentável</span><span>✦ Valor agregado na origem</span><span>✦ Formalização e segurança</span><span>✦ Comércio direto internacional</span>
+</div>
+</section>
+<!-- table-status-added -->
+<!-- 2. PIEDRA LAJA -->
+<section class="section-content" id="laja">
+<h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-yellow-500 pl-4 text-center">Pedra Laje</h2>
+<div class="proposal-grid"><article class="proposal-card"><h4>Laja Verde Ocre</h4><p><strong>Formatos:</strong> Irregular / Recortada Longo Livre</p><p><strong>Tons:</strong> verde, oliva e ocre · Cara Cara - Phumahuasi</p><p><strong>Usos sugeridos:</strong> fachadas, muros, paisagismo e projetos de arquitetura.</p></article><article class="proposal-card"><h4>Laja Risco Azul</h4><p><strong>Formatos:</strong> Irregular / Recortada Longo Livre</p><p><strong>Tons:</strong> azul-acinzentados · San Francisco-Nazareno</p><p><strong>Usos sugeridos:</strong> fachadas, muros, paisagismo e projetos de arquitetura.</p></article><article class="proposal-card"><h4>Laja Bayo Huancar</h4><p><strong>Formatos:</strong> Irregular / Recortada Longo Livre</p><p><strong>Tons:</strong> bayo, areia e ocre · Abra Pampa</p><p><strong>Usos sugeridos:</strong> fachadas, muros, paisagismo e projetos de arquitetura.</p></article><article class="proposal-card"><h4>Piedra Laja Arenisca Rosa Fenixita</h4><p><strong>Formatos:</strong> Irregular / Recortada Comprimento Livre</p><p><strong>Tons:</strong> rosa / vermelho amarronzado</p><p><strong>Usos sugeridos:</strong> pisos, fachadas, muros, paisagismo e projetos de arquitetura.</p></article></div>
+<div class="trust-strip" id="exportacion"><h3>Consultas de distribuição e exportação</h3><p>Para avaliar uma consulta, informe o produto, a apresentação, o volume estimado e o destino. A disponibilidade, a embalagem e as condições comerciais serão confirmadas para cada operação.</p></div>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Produto</th>
+<th>Apresentação</th><th>Imagem de referência</th>
+<th>Procedência</th>
+<th>M² por pallet</th>
+<th>Preço</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Laja Verde Ocre<br/><span class="verification-status reference">Imagem de referência</span></td><td>Irregular paletizada</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Laja Verde Ocre — formato irregular" class="img-zoom-toggle" id="zoom-laja-pt-01" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-01" title="Ampliar: Laja Verde Ocre — formato irregular"><img alt="Imagem de referência da Laja Verde Ocre — formato irregular" loading="lazy" src="ewdpwnqrc3b9i40zipxc66.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-01" title="Fechar ampliação"><img alt="Imagem de referência da Laja Verde Ocre — formato irregular" src="ewdpwnqrc3b9i40zipxc66.jpg"/></label></div></td><td>Cara Cara - Phumahuasi (Jujuy)</td><td>25 m²</td><td>Consultar</td></tr>
+<tr><td>Laja Verde Ocre<br/><span class="verification-status reference">Imagem de referência</span></td><td>Laja Recortada Comprimento Livre</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Laja Verde Ocre — recortada em comprimento livre" class="img-zoom-toggle" id="zoom-laja-pt-02" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-02" title="Ampliar: Laja Verde Ocre — recortada em comprimento livre"><img alt="Imagem de referência da Laja Verde Ocre — recortada em comprimento livre" loading="lazy" src="kwov0lh74rq1vhno3l8ruv.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-02" title="Fechar ampliação"><img alt="Imagem de referência da Laja Verde Ocre — recortada em comprimento livre" src="kwov0lh74rq1vhno3l8ruv.jpg"/></label></div></td><td>Cara Cara - Phumahuasi (Jujuy)</td><td>30 m²</td><td>Consultar</td></tr>
+<tr><td>Laja Risco Azul<br/><span class="verification-status reference">Imagem de referência</span></td><td>Laja Recortada Comprimento Livre</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Laja Risco Azul — recortada em comprimento livre" class="img-zoom-toggle" id="zoom-laja-pt-03" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-03" title="Ampliar: Laja Risco Azul — recortada em comprimento livre"><img alt="Imagem de referência da Laja Risco Azul — recortada em comprimento livre" loading="lazy" src="x0nkt4tufeewsmcitue4ee.png"/></label><label class="img-zoom-preview" for="zoom-laja-pt-03" title="Fechar ampliação"><img alt="Imagem de referência da Laja Risco Azul — recortada em comprimento livre" src="x0nkt4tufeewsmcitue4ee.png"/></label></div></td><td>San Francisco-Nazareno (Salta)</td><td>30 m²</td><td>Consultar</td></tr>
+<tr><td>Laja Risco Azul<br/><span class="verification-status reference">Imagem de referência</span></td><td>Laja Irregular</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Laja Risco Azul — formato irregular" class="img-zoom-toggle" id="zoom-laja-pt-04" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-04" title="Ampliar: Laja Risco Azul — formato irregular"><img alt="Imagem de referência da Laja Risco Azul — formato irregular" loading="lazy" src="z3lfcjboep9esmiihskim8.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-04" title="Fechar ampliação"><img alt="Imagem de referência da Laja Risco Azul — formato irregular" src="z3lfcjboep9esmiihskim8.jpg"/></label></div></td><td>San Francisco-Nazareno (Salta)</td><td>30 m²</td><td>Consultar</td></tr>
+<tr><td>Laja Bayo Huancar<br/><span class="verification-status reference">Imagem de referência</span></td><td>Laja Recortada Comprimento Livre</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Laja Bayo Huancar — recortada em comprimento livre" class="img-zoom-toggle" id="zoom-laja-pt-05" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-05" title="Ampliar: Laja Bayo Huancar — recortada em comprimento livre"><img alt="Imagem de referência da Laja Bayo Huancar — recortada em comprimento livre" loading="lazy" src="wxwug86tdzg72tfy2my5k2.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-05" title="Fechar ampliação"><img alt="Imagem de referência da Laja Bayo Huancar — recortada em comprimento livre" src="wxwug86tdzg72tfy2my5k2.jpg"/></label></div></td><td>Abra Pampa (Jujuy)</td><td>30 m²</td><td>Consultar</td></tr>
+<tr><td>Laja Bayo Huancar<br/><span class="verification-status reference">Imagem de referência</span></td><td>Laja Irregular</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Laja Bayo Huancar — formato irregular" class="img-zoom-toggle" id="zoom-laja-pt-06" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-06" title="Ampliar: Laja Bayo Huancar — formato irregular"><img alt="Imagem de referência da Laja Bayo Huancar — formato irregular" loading="lazy" src="bwqmvm1o6ev2aouznyp7gq.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-06" title="Fechar ampliação"><img alt="Imagem de referência da Laja Bayo Huancar — formato irregular" src="bwqmvm1o6ev2aouznyp7gq.jpg"/></label></div></td><td>Abra Pampa (Jujuy)</td><td>25 m²</td><td>Consultar</td></tr>
+<tr><td>Piedra Laja Arenisca Rosa Fenixita<br/><span class="verification-status reference">Imagem de referência</span></td><td>Irregular</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Piedra Laja Arenisca Rosa Fenixita — formato irregular" class="img-zoom-toggle" id="zoom-laja-pt-07" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-07" title="Ampliar: Piedra Laja Arenisca Rosa Fenixita — formato irregular"><img alt="Imagem de referência da Piedra Laja Arenisca Rosa Fenixita — formato irregular" loading="lazy" src="qh0agxbxpsg794xrhcpokw.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-07" title="Fechar ampliação"><img alt="Imagem de referência da Piedra Laja Arenisca Rosa Fenixita — formato irregular" src="qh0agxbxpsg794xrhcpokw.jpg"/></label></div></td><td>El Carmen - Jujuy</td><td>25 m²</td><td>Consultar</td></tr>
+<tr><td>Piedra Laja Arenisca Rosa Fenixita<br/><span class="verification-status reference">Imagem de referência</span></td><td>Recortada Comprimento Livre</td><td class="laja-reference-cell"><div class="img-zoom-container laja-table-zoom"><input aria-label="Ampliar: Piedra Laja Arenisca Rosa Fenixita — recortada em comprimento livre" class="img-zoom-toggle" id="zoom-laja-pt-08" type="checkbox"/><label class="img-zoom-thumb laja-reference-thumb" for="zoom-laja-pt-08" title="Ampliar: Piedra Laja Arenisca Rosa Fenixita — recortada em comprimento livre"><img alt="Imagem de referência da Piedra Laja Arenisca Rosa Fenixita — recortada em comprimento livre" loading="lazy" src="8ddr7owya1vzl87b8o227d.jpg"/></label><label class="img-zoom-preview" for="zoom-laja-pt-08" title="Fechar ampliação"><img alt="Imagem de referência da Piedra Laja Arenisca Rosa Fenixita — recortada em comprimento livre" src="8ddr7owya1vzl87b8o227d.jpg"/></label></div></td><td>El Carmen - Jujuy</td><td>30 m²</td><td>Consultar</td></tr>
+</tbody>
+</table>
+</div>
+<h3 class="text-xl font-bold mt-12 mb-6">Aplicações em obra</h3>
+<div class="gallery-grid">
+<figure class="gallery-item"><div class="img-zoom-container catalog-gallery-zoom"><input aria-label="Ampliar imagen" class="img-zoom-toggle" id="zoom-unique-12" type="checkbox"/><label class="img-zoom-thumb" for="zoom-unique-12"><img alt="Laja Verde Ocre — Irregular" src="8dacnzvrqs122b6zhd7zfr.jpg"/></label><label class="img-zoom-preview" for="zoom-unique-12" title="Fechar ampliação"><img alt="Laja Verde Ocre — Irregular" src="8dacnzvrqs122b6zhd7zfr.jpg"/></label></div><figcaption class="gallery-caption">Laja Verde Ocre — Irregular<small>Revestimento pétreo em fachada residencial</small></figcaption></figure>
+<figure class="gallery-item"><div class="img-zoom-container catalog-gallery-zoom"><input aria-label="Ampliar imagen" class="img-zoom-toggle" id="zoom-unique-13" type="checkbox"/><label class="img-zoom-thumb" for="zoom-unique-13"><img alt="Laja Verde Ocre — Recortada Longa" src="kwov0lh74rq1vhno3l8ruv.jpg"/></label><label class="img-zoom-preview" for="zoom-unique-13" title="Fechar ampliação"><img alt="Laja Verde Ocre — Recortada Longa" src="kwov0lh74rq1vhno3l8ruv.jpg"/></label></div><figcaption class="gallery-caption">Laja Verde Ocre — Recortada Longa<small>Revestimento pétreo em fachada moderna</small></figcaption></figure>
+<figure class="gallery-item"><div class="img-zoom-container catalog-gallery-zoom"><input aria-label="Ampliar imagen" class="img-zoom-toggle" id="zoom-unique-14" type="checkbox"/><label class="img-zoom-thumb" for="zoom-unique-14"><img alt="Laja Risco Azul — Recortada Longa" src="9ylszi2tnox3wqtvxeo98k.jpg"/></label><label class="img-zoom-preview" for="zoom-unique-14" title="Fechar ampliação"><img alt="Laja Risco Azul — Recortada Longa" src="9ylszi2tnox3wqtvxeo98k.jpg"/></label></div><figcaption class="gallery-caption">Laja Risco Azul — Recortada Longa<small>Revestimento pétreo em lodge de montanha</small></figcaption></figure>
+</div>
+</section>
+<!-- 3. GRANZA / AGGREGATES -->
+<section class="section-content" id="granza">
+<h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-yellow-500 pl-4 granza-section-heading">Agregados</h2>
+<article class="granza-product">
+<header class="granza-product-head"><div><span class="granza-brand-tag">STONIQUE · AGREGADOS</span><h3 class="granza-product-title">Granza Inty</h3></div><span class="granza-product-type">Pedra britada amarela</span></header>
+<div class="granza-showcase">
+<figure class="granza-reference">
+<div class="granza-reference-mat"><div class="img-zoom-container granza-reference-zoom"><input aria-label="Ampliar referência de Granza Inty" class="img-zoom-toggle" id="zoom-granza-inty-reference" type="checkbox"/><label class="img-zoom-thumb granza-reference-thumb" for="zoom-granza-inty-reference"><img alt="Granza Inty amarela — imagem de referência do produto" src="wkeuu8ns2rcbz0ipwfrqfx.jpg"/><span aria-hidden="true"></span></label><label class="img-zoom-preview granza-reference-preview" for="zoom-granza-inty-reference" title="Fechar ampliação"><img alt="Granza Inty amarela — imagem de referência do produto" src="wkeuu8ns2rcbz0ipwfrqfx.jpg"/></label></div></div>
+<figcaption>Granza Inty · pedra britada amarela</figcaption>
+</figure>
+<div class="granza-product-body">
+<div class="granza-facts"><div class="granza-fact"><strong>Apresentação</strong><span>A Granel · Big Bag · Sacos de 25 kg, 10 kg e 5 kg</span></div><div class="granza-fact"><strong>Marca</strong><span>Stonique</span></div><div class="granza-fact"><strong>Categoria</strong><span>Agregados</span></div></div>
+<div class="granza-use-main"><h3>Usos e Aplicações</h3><p>Caminhos, paisagismo, aterros, bases, pisos drenantes etc.</p></div>
+</div>
+</div>
+</article>
+<div aria-label="Galeria de aplicações de Granza Inty" class="granza-gallery">
+<div class="granza-gallery-heading"><div><span class="granza-gallery-kicker">STONIQUE · ESTUDOS DE MATERIAIS · 01</span><h3>Galeria de aplicações</h3><p>Uma coleção visual de possibilidades para Granza Inty: caminhos, paisagismo e superfícies permeáveis.</p></div><div class="granza-gallery-index"><strong>03</strong><span>ESTUDOS</span></div></div>
+<input aria-label="Todas" checked="" class="granza-filter-input" id="granza-filter-all" name="granza-filter-pt" type="radio"/>
+<input aria-label="Caminhos" class="granza-filter-input" id="granza-filter-path" name="granza-filter-pt" type="radio"/>
+<input aria-label="Paisagismo" class="granza-filter-input" id="granza-filter-land" name="granza-filter-pt" type="radio"/>
+<input aria-label="Pátios permeáveis" class="granza-filter-input" id="granza-filter-drain" name="granza-filter-pt" type="radio"/>
+<div aria-label="Filtrar aplicações de granza" class="granza-gallery-filters"><label for="granza-filter-all">Todas</label><label for="granza-filter-path">Caminhos</label><label for="granza-filter-land">Paisagismo</label><label for="granza-filter-drain">Pátios permeáveis</label></div>
+<div class="granza-gallery-grid">
+<figure class="granza-art-card category-path">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de um caminho de granza amarela junto a uma residência contemporânea" class="img-zoom-toggle" id="zoom-granza-pt-inty-01" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-inty-01" title="Ampliar aplicação: Visualização conceitual de um caminho de granza amarela junto a uma residência contemporânea"><img alt="Visualização conceitual de um caminho de granza amarela junto a uma residência contemporânea" loading="lazy" src="kiwgho1nkh9e4i4h5b0kwx.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-inty-01" title="Toque na imagem para fechar"><img alt="Visualização conceitual de um caminho de granza amarela junto a uma residência contemporânea" src="kiwgho1nkh9e4i4h5b0kwx.webp"/></label></div><span class="granza-art-index">01 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">CAMINHOS</span><h4>Um percurso entre jardins</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+<figure class="granza-art-card category-land">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de granza amarela em um jardim mediterrâneo de design" class="img-zoom-toggle" id="zoom-granza-pt-inty-02" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-inty-02" title="Ampliar aplicação: Visualização conceitual de granza amarela em um jardim mediterrâneo de design"><img alt="Visualização conceitual de granza amarela em um jardim mediterrâneo de design" loading="lazy" src="6gesm4gq9iy8v7ltfcwy7i.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-inty-02" title="Toque na imagem para fechar"><img alt="Visualização conceitual de granza amarela em um jardim mediterrâneo de design" src="6gesm4gq9iy8v7ltfcwy7i.webp"/></label></div><span class="granza-art-index">02 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">PAISAGISMO</span><h4>Matéria, luz e vegetação</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+<figure class="granza-art-card category-drain">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de pátio permeável com granza amarela junto a uma casa moderna" class="img-zoom-toggle" id="zoom-granza-pt-inty-03" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-inty-03" title="Ampliar aplicação: Visualização conceitual de pátio permeável com granza amarela junto a uma casa moderna"><img alt="Visualização conceitual de pátio permeável com granza amarela junto a uma casa moderna" loading="lazy" src="v49dqwafy2mjc0yibsydn7.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-inty-03" title="Toque na imagem para fechar"><img alt="Visualização conceitual de pátio permeável com granza amarela junto a uma casa moderna" src="v49dqwafy2mjc0yibsydn7.webp"/></label></div><span class="granza-art-index">03 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">SUPERFÍCIES PERMEÁVEIS</span><h4>Pátio com drenagem integrada</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+</div>
+<p class="granza-gallery-note">Imagens conceituais de aplicação; não representam obras executadas.</p>
+</div>
+<article class="granza-product granza-product-volcan">
+<header class="granza-product-head"><div><span class="granza-brand-tag">STONIQUE · AGREGADOS</span><h3 class="granza-product-title">Granza Gris Volcan</h3></div><span class="granza-product-type">Agregado vulcânico cinza</span></header>
+<div class="granza-showcase">
+<figure class="granza-reference">
+<div class="granza-reference-mat"><div class="img-zoom-container granza-reference-zoom"><input aria-label="Ampliar referência de Granza Gris Volcan" class="img-zoom-toggle" id="zoom-granza-volcan-reference" type="checkbox"/><label class="img-zoom-thumb granza-reference-thumb" for="zoom-granza-volcan-reference"><img alt="Granza Gris Volcan — imagem de referência do agregado" loading="lazy" src="mz3jluhosmyykr6pud4tx5.jpg"/><span aria-hidden="true"></span></label><label class="img-zoom-preview granza-reference-preview" for="zoom-granza-volcan-reference" title="Fechar ampliação"><img alt="Granza Gris Volcan — imagem de referência do agregado" src="mz3jluhosmyykr6pud4tx5.jpg"/></label></div></div>
+<figcaption>Granza Gris Volcan · agregado cinza</figcaption>
+</figure>
+<div class="granza-product-body">
+<div class="granza-facts"><div class="granza-fact"><strong>Apresentação</strong><span>A Granel · Big Bag · Sacos de 25 kg, 10 kg e 5 kg</span></div><div class="granza-fact"><strong>Marca</strong><span>Stonique</span></div><div class="granza-fact"><strong>Categoria</strong><span>Agregados</span></div></div>
+<div class="granza-use-main"><h3>Usos e Aplicações</h3><p>Pátios externos, caminhos e paisagismo.</p></div>
+</div>
+</div>
+</article>
+<div aria-label="Galeria de aplicações de Granza Gris Volcan" class="granza-gallery granza-volcan-gallery">
+<div class="granza-gallery-heading"><div><span class="granza-gallery-kicker">STONIQUE · ESTUDOS DE MATERIAIS · 02</span><h3>Galeria de aplicações</h3><p>Três aplicações de Granza Gris Volcan: caminhos, paisagismo e pátios permeáveis.</p></div><div class="granza-gallery-index"><strong>03</strong><span>APLICAÇÃO</span></div></div>
+<input aria-label="Todas" checked="" class="granza-filter-input" id="granza-volcan-filter-all" name="granza-volcan-filter-pt" type="radio"/>
+<input aria-label="Caminhos" class="granza-filter-input" id="granza-volcan-filter-path" name="granza-volcan-filter-pt" type="radio"/>
+<input aria-label="Paisagismo" class="granza-filter-input" id="granza-volcan-filter-land" name="granza-volcan-filter-pt" type="radio"/>
+<input aria-label="Superfícies permeáveis" class="granza-filter-input" id="granza-volcan-filter-drain" name="granza-volcan-filter-pt" type="radio"/>
+<div aria-label="Filtrar aplicações de granza" class="granza-gallery-filters"><label for="granza-volcan-filter-all">Todas</label><label for="granza-volcan-filter-path">Caminhos</label><label for="granza-volcan-filter-land">Paisagismo</label><label for="granza-volcan-filter-drain">Superfícies permeáveis</label></div>
+<div class="granza-gallery-grid">
+<figure class="granza-art-card category-volcan-path">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Granza Gris Volcan em um caminho externo entre placas e vegetação" class="img-zoom-toggle" id="zoom-granza-pt-volcan-01" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-volcan-01" title="Ampliar aplicação: Granza Gris Volcan em um caminho externo entre placas e vegetação"><img alt="Granza Gris Volcan em um caminho externo entre placas e vegetação" loading="lazy" src="7gsza7wtutjzaq8x3ogc9e.jpg"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-volcan-01" title="Toque na imagem para fechar"><img alt="Granza Gris Volcan em um caminho externo entre placas e vegetação" src="7gsza7wtutjzaq8x3ogc9e.jpg"/></label></div><span class="granza-art-index">01 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">CAMINHOS</span><h4>Pátio externo com Granza Gris Volcan</h4><p>Aplicação de referência</p></figcaption>
+</figure>
+<figure class="granza-art-card category-volcan-land">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de paisagismo contemporâneo com Granza Gris Volcan" class="img-zoom-toggle" id="zoom-granza-pt-volcan-02" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-volcan-02" title="Ampliar aplicação: Visualização conceitual de paisagismo contemporâneo com Granza Gris Volcan"><img alt="Visualização conceitual de paisagismo contemporâneo com Granza Gris Volcan" loading="lazy" src="d6lx3q9657xrmk7r8bo7r0.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-volcan-02" title="Toque na imagem para fechar"><img alt="Visualização conceitual de paisagismo contemporâneo com Granza Gris Volcan" src="d6lx3q9657xrmk7r8bo7r0.webp"/></label></div><span class="granza-art-index">02 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">PAISAGISMO</span><h4>Jardim mineral em tons de cinza</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+<figure class="granza-art-card category-volcan-drain">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de pátio permeável com agregado vulcânico cinza" class="img-zoom-toggle" id="zoom-granza-pt-volcan-03" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-volcan-03" title="Ampliar aplicação: Visualização conceitual de pátio permeável com agregado vulcânico cinza"><img alt="Visualização conceitual de pátio permeável com agregado vulcânico cinza" loading="lazy" src="g5e563zur9yxz4wox46n62.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-volcan-03" title="Toque na imagem para fechar"><img alt="Visualização conceitual de pátio permeável com agregado vulcânico cinza" src="g5e563zur9yxz4wox46n62.webp"/></label></div><span class="granza-art-index">03 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">SUPERFÍCIES PERMEÁVEIS</span><h4>Pátio permeável cinza</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+</div>
+</div>
+<article class="granza-product granza-product-siena">
+<header class="granza-product-head"><div><span class="granza-brand-tag">STONIQUE · AGREGADOS</span><h3 class="granza-product-title">Granza Roja Siena</h3></div><span class="granza-product-type">Pedra britada avermelhada</span></header>
+<div class="granza-showcase">
+<figure class="granza-reference">
+<div class="granza-reference-mat"><div class="img-zoom-container granza-reference-zoom"><input aria-label="Ampliar referência de Granza Roja Siena" class="img-zoom-toggle" id="zoom-granza-siena-reference" type="checkbox"/><label class="img-zoom-thumb granza-reference-thumb" for="zoom-granza-siena-reference"><img alt="Granza Roja Siena — imagem de referência do agregado" loading="lazy" src="c2nva3cw4a1ubpoymh75uv.jpg"/><span aria-hidden="true"></span></label><label class="img-zoom-preview granza-reference-preview" for="zoom-granza-siena-reference" title="Fechar ampliação"><img alt="Granza Roja Siena — imagem de referência do agregado" src="c2nva3cw4a1ubpoymh75uv.jpg"/></label></div></div>
+<figcaption>Granza Roja Siena · pedra britada avermelhada</figcaption>
+</figure>
+<div class="granza-product-body">
+<div class="granza-facts"><div class="granza-fact"><strong>Apresentação</strong><span>A Granel · Big Bag · Sacos de 25 kg, 10 kg e 5 kg</span></div><div class="granza-fact"><strong>Marca</strong><span>Stonique</span></div><div class="granza-fact"><strong>Categoria</strong><span>Agregados</span></div></div>
+<div class="granza-use-main"><h3>Usos e Aplicações</h3><p>Paisagismo e caminhos em espaços externos.</p></div>
+</div>
+</div>
+</article>
+<div aria-label="Galeria de aplicações de Granza Roja Siena" class="granza-gallery granza-siena-gallery">
+<div class="granza-gallery-heading"><div><span class="granza-gallery-kicker">STONIQUE · ESTUDOS DE MATERIAIS · 03</span><h3>Galeria de aplicações</h3><p>Três aplicações de Granza Roja Siena em uma galeria coordenada de caminhos, paisagismo e superfícies permeáveis.</p></div><div class="granza-gallery-index"><strong>03</strong><span>APLICAÇÃO</span></div></div>
+<input aria-label="Todas" checked="" class="granza-filter-input" id="granza-siena-filter-all" name="granza-siena-filter-pt" type="radio"/>
+<input aria-label="Caminhos" class="granza-filter-input" id="granza-siena-filter-path" name="granza-siena-filter-pt" type="radio"/>
+<input aria-label="Paisagismo" class="granza-filter-input" id="granza-siena-filter-land" name="granza-siena-filter-pt" type="radio"/>
+<input aria-label="Superfícies permeáveis" class="granza-filter-input" id="granza-siena-filter-drain" name="granza-siena-filter-pt" type="radio"/>
+<div aria-label="Filtrar aplicações de granza" class="granza-gallery-filters"><label for="granza-siena-filter-all">Todas</label><label for="granza-siena-filter-path">Caminhos</label><label for="granza-siena-filter-land">Paisagismo</label><label for="granza-siena-filter-drain">Superfícies permeáveis</label></div>
+<div class="granza-gallery-grid">
+<figure class="granza-art-card category-siena-path">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Granza Roja Siena em um caminho externo junto a um jardim" class="img-zoom-toggle" id="zoom-granza-pt-siena-01" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-siena-01" title="Ampliar aplicação: Granza Roja Siena em um caminho externo junto a um jardim"><img alt="Granza Roja Siena em um caminho externo junto a um jardim" loading="lazy" src="f8tlme34idfgzs4kjyvcpk.jpg"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-siena-01" title="Toque na imagem para fechar"><img alt="Granza Roja Siena em um caminho externo junto a um jardim" src="f8tlme34idfgzs4kjyvcpk.jpg"/></label></div><span class="granza-art-index">01 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">CAMINHOS</span><h4>Caminho externo em tons de Siena</h4><p>Aplicação de referência</p></figcaption>
+</figure>
+<figure class="granza-art-card category-siena-land">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de paisagismo contemporâneo com Granza Roja Siena" class="img-zoom-toggle" id="zoom-granza-pt-siena-02" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-siena-02" title="Ampliar aplicação: Visualização conceitual de paisagismo contemporâneo com Granza Roja Siena"><img alt="Visualização conceitual de paisagismo contemporâneo com Granza Roja Siena" loading="lazy" src="4ka70f8q6iyk7kmhg5rptb.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-siena-02" title="Toque na imagem para fechar"><img alt="Visualização conceitual de paisagismo contemporâneo com Granza Roja Siena" src="4ka70f8q6iyk7kmhg5rptb.webp"/></label></div><span class="granza-art-index">02 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">PAISAGISMO</span><h4>Paisagismo em tons de Siena</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+<figure class="granza-art-card category-siena-drain">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de pátio permeável com agregado Siena avermelhado" class="img-zoom-toggle" id="zoom-granza-pt-siena-03" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-siena-03" title="Ampliar aplicação: Visualização conceitual de pátio permeável com agregado Siena avermelhado"><img alt="Visualização conceitual de pátio permeável com agregado Siena avermelhado" loading="lazy" src="861e41ciju0kofpjjp2z09.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-siena-03" title="Toque na imagem para fechar"><img alt="Visualização conceitual de pátio permeável com agregado Siena avermelhado" src="861e41ciju0kofpjjp2z09.webp"/></label></div><span class="granza-art-index">03 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">SUPERFÍCIES PERMEÁVEIS</span><h4>Pátio permeável em tom Siena</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+</div>
+</div>
+<article class="granza-product granza-product-bayo">
+<header class="granza-product-head"><div><span class="granza-brand-tag">STONIQUE · AGREGADOS</span><h3 class="granza-product-title">Granza Bayo</h3></div><span class="granza-product-type">Agregado em tons de bege e creme</span></header>
+<div class="granza-showcase">
+<figure class="granza-reference"><div class="granza-reference-mat"><div class="img-zoom-container granza-reference-zoom"><input aria-label="Ampliar referência de Granza Bayo" class="img-zoom-toggle" id="zoom-granza-bayo-reference" type="checkbox"/><label class="img-zoom-thumb granza-reference-thumb" for="zoom-granza-bayo-reference"><img alt="Granza Bayo — imagem de referência do agregado" loading="lazy" src="8szjpme0qizes6ayy2qx49.jpg"/><span aria-hidden="true"></span></label><label class="img-zoom-preview granza-reference-preview" for="zoom-granza-bayo-reference" title="Fechar ampliação"><img alt="Granza Bayo — imagem de referência do agregado" src="8szjpme0qizes6ayy2qx49.jpg"/></label></div></div><figcaption>Granza Bayo · tons de bege e creme</figcaption></figure>
+<div class="granza-product-body"><div class="granza-facts"><div class="granza-fact"><strong>Apresentação</strong><span>A Granel · Big Bag · Sacos de 25 kg, 10 kg e 5 kg</span></div><div class="granza-fact"><strong>Marca</strong><span>Stonique</span></div><div class="granza-fact"><strong>Categoria</strong><span>Agregados</span></div></div><div class="granza-use-main"><h3>Usos e Aplicações</h3><p>Caminhos, paisagismo e pátios externos permeáveis.</p></div></div>
+</div>
+</article>
+<div aria-label="Galeria de aplicações de Granza Bayo" class="granza-gallery granza-bayo-gallery">
+<div class="granza-gallery-heading"><div><span class="granza-gallery-kicker">STONIQUE · ESTUDOS DE MATERIAIS · 04</span><h3>Galeria de aplicações</h3><p>Três aplicações de Granza Bayo: caminhos, paisagismo e pátios permeáveis, em uma série visual coordenada.</p></div><div class="granza-gallery-index"><strong>03</strong><span>APLICAÇÕES</span></div></div>
+<input aria-label="Todas" checked="" class="granza-filter-input" id="granza-bayo-filter-all" name="granza-bayo-filter-pt" type="radio"/>
+<input aria-label="Caminhos" class="granza-filter-input" id="granza-bayo-filter-path" name="granza-bayo-filter-pt" type="radio"/>
+<input aria-label="Paisagismo" class="granza-filter-input" id="granza-bayo-filter-land" name="granza-bayo-filter-pt" type="radio"/>
+<input aria-label="Superfícies permeáveis" class="granza-filter-input" id="granza-bayo-filter-drain" name="granza-bayo-filter-pt" type="radio"/>
+<div aria-label="Filtrar aplicações de granza" class="granza-gallery-filters"><label for="granza-bayo-filter-all">Todas</label><label for="granza-bayo-filter-path">Caminhos</label><label for="granza-bayo-filter-land">Paisagismo</label><label for="granza-bayo-filter-drain">Superfícies permeáveis</label></div>
+<div class="granza-gallery-grid">
+<figure class="granza-art-card category-bayo-path"><div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Granza Bayo em um caminho externo com placas e vegetação" class="img-zoom-toggle" id="zoom-granza-pt-bayo-01" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-bayo-01" title="Ampliar aplicação: Granza Bayo em um caminho externo com placas e vegetação"><img alt="Granza Bayo em um caminho externo com placas e vegetação" loading="lazy" src="fdft2tjldcxua2k3khy4n1.jpg"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-bayo-01" title="Toque na imagem para fechar"><img alt="Granza Bayo em um caminho externo com placas e vegetação" src="fdft2tjldcxua2k3khy4n1.jpg"/></label></div><span class="granza-art-index">01 / 03</span></div><figcaption class="granza-art-caption"><span class="granza-art-category">CAMINHOS</span><h4>Caminho com Granza Bayo</h4><p>Aplicação de referência</p></figcaption></figure>
+<figure class="granza-art-card category-bayo-land">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de jardim contemporâneo com Granza Bayo bege e creme" class="img-zoom-toggle" id="zoom-granza-pt-bayo-02" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-bayo-02" title="Ampliar aplicação: Visualização conceitual de jardim contemporâneo com Granza Bayo bege e creme"><img alt="Visualização conceitual de jardim contemporâneo com Granza Bayo bege e creme" loading="lazy" src="77fmhcmpfj6q4muavwm0cz.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-bayo-02" title="Toque na imagem para fechar"><img alt="Visualização conceitual de jardim contemporâneo com Granza Bayo bege e creme" src="77fmhcmpfj6q4muavwm0cz.webp"/></label></div><span class="granza-art-index">02 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">PAISAGISMO</span><h4>Paisagismo em tons naturais</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+<figure class="granza-art-card category-bayo-drain">
+<div class="granza-art-media"><div class="img-zoom-container granza-art-zoom-container"><input aria-label="Ampliar aplicação: Visualização conceitual de pátio permeável com Granza Bayo em tons claros" class="img-zoom-toggle" id="zoom-granza-pt-bayo-03" type="checkbox"/><label class="img-zoom-thumb" for="zoom-granza-pt-bayo-03" title="Ampliar aplicação: Visualização conceitual de pátio permeável com Granza Bayo em tons claros"><img alt="Visualização conceitual de pátio permeável com Granza Bayo em tons claros" loading="lazy" src="k8tx09sh7hka7o78jszqls.webp"/><span aria-hidden="true" class="granza-art-zoom"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label><label class="img-zoom-preview" for="zoom-granza-pt-bayo-03" title="Toque na imagem para fechar"><img alt="Visualização conceitual de pátio permeável com Granza Bayo em tons claros" src="k8tx09sh7hka7o78jszqls.webp"/></label></div><span class="granza-art-index">03 / 03</span></div>
+<figcaption class="granza-art-caption"><span class="granza-art-category">SUPERFÍCIES PERMEÁVEIS</span><h4>Pátio permeável claro</h4><p>Visualização conceitual</p></figcaption>
+</figure>
+</div>
+<p class="granza-gallery-note">A galeria reúne uma aplicação de referência e duas visualizações conceituais.</p>
+</div>
+</section>
+<!-- 4. GAVIÓN DECORATIVO -->
+<section class="section-content" id="gavion">
+<h2 class="text-3xl font-bold mb-6 text-blue-900 border-l-4 border-yellow-500 pl-4">Gabiões decorativos e mobiliário</h2>
+<section aria-label="Muro de Gabião Decorativo" class="gabion-gallery-section">
+<div class="gabion-gallery-heading"><span class="gabion-gallery-kicker">STONIQUE · MURO DE GABIÃO DECORATIVO</span><h3>Muro de Gabião Decorativo</h3><p>O gabião decorativo confere elegância pétrea e integração natural. A instalação modular é ágil e facilita a passagem de redes técnicas de serviços, acessíveis para manutenção imediata, sem demolição nem entulho.</p></div>
+<article aria-label="IMAGEM DE DESTAQUE · MURO DE GABIÃO" class="gabion-featured">
+<div class="img-zoom-container gabion-featured-media">
+<input aria-label="Ampliar imagem de destaque" class="img-zoom-toggle" id="zoom-gabion-feature-pt" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-feature-pt" title="Ampliar imagem de destaque"><img alt="Fachada de pedra, vidro e luz — muro de gabião com painéis envidraçados e iluminação quente ao entardecer" loading="lazy" src="u5k69s0zn05p39i3s3d7hh.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-feature-pt" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Fachada de pedra, vidro e luz" src="u5k69s0zn05p39i3s3d7hh.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IMAGEM DE DESTAQUE · MURO DE GABIÃO</span><strong>Fachada de pedra, vidro e luz</strong><p>Uma sequência arquitetônica em que o gabião acrescenta textura, profundidade e privacidade sem romper o diálogo com o vidro.</p><p><b>LEITURA DA PEDRA</b>O enchimento apresenta seixos arredondados e irregulares em tons carvão, terrosos e ocre. A repetição vertical enquadra os painéis de vidro e transforma a variação natural em ritmo. Para uma solução construída, defina calibre uniforme por módulo e use peças maiores que a abertura da malha.</p><p><b>ESTILO PROPOSTO</b>Fachada modular de inspiração japonesa contemporânea: geometria sóbria, materiais honestos e luz quente.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-featured-copy"><span class="gabion-featured-kicker">IMAGEM DE DESTAQUE · MURO DE GABIÃO</span><h4>Fachada de pedra, vidro e luz</h4><p>Módulos pétreos verticais marcam o ritmo de uma fachada envidraçada; a iluminação quente valoriza seus matizes ao entardecer.</p><span aria-hidden="true" class="gabion-featured-rule"></span></div>
+</article>
+<div class="gabion-gallery-grid">
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Ritmo modular, pedra e madeira" class="img-zoom-toggle" id="zoom-gabion-pt-01" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-01" title="Ampliar imagen"><img alt="Ritmo modular, pedra e madeira" loading="lazy" src="5kdjn5klpi75wgfo76xunb.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-01" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Ritmo modular, pedra e madeira" src="5kdjn5klpi75wgfo76xunb.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Ritmo modular, pedra e madeira</strong><p>Pilares verticais de pedra cinza entre planos quentes de madeira.</p><p><b>PEDRA E CALIBRE</b>Pedra cinza angular, de calibre uniforme e dimensionada para a abertura da malha. A madeira oferece um contraponto tátil e acolhedor.</p><p><b>ESTILO PROPOSTO</b>Proposta: painel de privacidade contemporâneo e modular, com linhas verticais, para pátios e fechamentos de desenho.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>01 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Ritmo modular, pedra e madeira</h4><p>Pilares verticais de pedra cinza entre planos quentes de madeira.</p></div>
+</article>
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Pedra clara, malha escura" class="img-zoom-toggle" id="zoom-gabion-pt-02" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-02" title="Ampliar imagen"><img alt="Pedra clara, malha escura" loading="lazy" src="a49226lwzabrc65px7pv92.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-02" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Pedra clara, malha escura" src="a49226lwzabrc65px7pv92.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Pedra clara, malha escura</strong><p>Enchimento luminoso combinado com estrutura metálica escura bem definida.</p><p><b>PEDRA E CALIBRE</b>Seixo claro e de leitura homogênea. A seleção por tamanho e tonalidade cria uma superfície serena; a pedra deve superar a abertura da malha.</p><p><b>ESTILO PROPOSTO</b>Proposta: fechamento minimalista de alto contraste, com malha preta e pedra clara para jardins contemporâneos.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>02 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Pedra clara, malha escura</h4><p>Enchimento luminoso combinado com estrutura metálica escura bem definida.</p></div>
+</article>
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Composição mineral bicolor" class="img-zoom-toggle" id="zoom-gabion-pt-03" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-03" title="Ampliar imagen"><img alt="Composição mineral bicolor" loading="lazy" src="klfc4d34xh2yyj8zpwu9kb.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-03" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Composição mineral bicolor" src="klfc4d34xh2yyj8zpwu9kb.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Composição mineral bicolor</strong><p>Contraste intencional entre pedra escura e faixas claras.</p><p><b>PEDRA E CALIBRE</b>A alternância entre cinzas profundos e pedra clara cria ritmo. Defina faixas e calibres antes do enchimento para manter a composição intencional.</p><p><b>ESTILO PROPOSTO</b>Proposta: muro escultórico de leitura gráfica, com malha contínua e enchimentos em faixas ou painéis distintos.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>03 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Composição mineral bicolor</h4><p>Contraste intencional entre pedra escura e faixas claras.</p></div>
+</article>
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Volume pétreo contínuo" class="img-zoom-toggle" id="zoom-gabion-pt-04" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-04" title="Ampliar imagen"><img alt="Volume pétreo contínuo" loading="lazy" src="ztu5azdl5ym5f24mzyfrm2.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-04" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Volume pétreo contínuo" src="ztu5azdl5ym5f24mzyfrm2.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Volume pétreo contínuo</strong><p>Um volume robusto em que a pedra define a arquitetura.</p><p><b>PEDRA E CALIBRE</b>Peças grandes em tons de cinza evidenciam textura e peso visual. O calibre deve ser compatível com a malha, a espessura do muro e o projeto estrutural.</p><p><b>ESTILO PROPOSTO</b>Proposta: muro de presença monolítica para arquitetura contemporânea, em diálogo com concreto, vidro e luz quente.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>04 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Volume pétreo contínuo</h4><p>Um volume robusto em que a pedra define a arquitetura.</p></div>
+</article>
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Ritmo vertical e filtro" class="img-zoom-toggle" id="zoom-gabion-pt-05" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-05" title="Ampliar imagen"><img alt="Ritmo vertical e filtro" loading="lazy" src="ohdb2phcx1lrwlhso2pjg4.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-05" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Ritmo vertical e filtro" src="ohdb2phcx1lrwlhso2pjg4.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Ritmo vertical e filtro</strong><p>Pedra natural emoldurada por perfis escuros e vegetação.</p><p><b>PEDRA E CALIBRE</b>A mistura de tons areia, ocre e cinza oferece uma leitura natural. Selecione a paleta por painel para que a variação pareça intencional.</p><p><b>ESTILO PROPOSTO</b>Proposta: fechamento ajardinado em módulos verticais, alternando transparência, pedra e elementos metálicos.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>05 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Ritmo vertical e filtro</h4><p>Pedra natural emoldurada por perfis escuros e vegetação.</p></div>
+</article>
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Mureta divisória de perfil baixo" class="img-zoom-toggle" id="zoom-gabion-pt-06" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-06" title="Ampliar imagen"><img alt="Mureta divisória de perfil baixo" loading="lazy" src="ijitr5vnlb7zo3uaky1i3n.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-06" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Mureta divisória de perfil baixo" src="ijitr5vnlb7zo3uaky1i3n.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Mureta divisória de perfil baixo</strong><p>Um elemento linear e permeável para organizar o espaço exterior.</p><p><b>PEDRA E CALIBRE</b>O enchimento claro e regular mantém um módulo estreito visualmente tranquilo. Compatibilize o calibre com a malha e preveja uma coroação estável.</p><p><b>ESTILO PROPOSTO</b>Proposta: divisória baixa para terraços ou pátios, combinando textura mineral e uma linha superior limpa.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>06 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Mureta divisória de perfil baixo</h4><p>Um elemento linear e permeável para organizar o espaço exterior.</p></div>
+</article>
+<article class="gabion-card">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Pedra e madeira no pátio" class="img-zoom-toggle" id="zoom-gabion-pt-07" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-pt-07" title="Ampliar imagen"><img alt="Pedra e madeira no pátio" loading="lazy" src="7xjuyuyh5j7h43ja2mb5sy.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-pt-07" title="Fechar ampliação"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Pedra e madeira no pátio" src="7xjuyuyh5j7h43ja2mb5sy.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">IDEIA DE PROJETO · MURO DE GABIÃO</span><strong>Pedra e madeira no pátio</strong><p>Um limite baixo que integra pedra, madeira e convivência ao ar livre.</p><p><b>PEDRA E CALIBRE</b>A pedra natural de tons variados contrasta com a madeira quente. Uma paleta contida de cinzas, terrosos e ocres acrescenta profundidade sem competir com o jardim.</p><p><b>ESTILO PROPOSTO</b>Proposta: limite de pátio inspirado no wabi-sabi, com materiais honestos, geometria simples e vegetação contida.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><small>07 / 07 · IDEIA DE PROJETO · MURO DE GABIÃO</small><h4>Pedra e madeira no pátio</h4><p>Um limite baixo que integra pedra, madeira e convivência ao ar livre.</p></div>
+</article>
+</div>
+<div class="gabion-gallery-foot"><span>Esta seção pode ser ampliada com novas imagens.</span><strong>ADICIONAR NOVAS IMAGENS</strong></div>
+</section>
+<section aria-label="Mobiliário com Gabião Decorativo" class="gabion-gallery-section gabion-furniture-section">
+<div class="gabion-gallery-heading"><span class="gabion-gallery-kicker">STONIQUE · MOBILIÁRIO EM PEDRA</span><h3>Mobiliário com Gabião Decorativo</h3><p>Bancos, fogueiras, jardineiras e muros verdes em gabião decorativo. Filtre por tipo e amplie cada imagem para explorar materiais e estilos.</p></div>
+<input aria-label="Todos · 9" checked="" class="furniture-filter-input" id="furn-pt-all" name="furniture-filter-pt" type="radio"/>
+<input aria-label="Assentos · 3" class="furniture-filter-input" id="furn-pt-seats" name="furniture-filter-pt" type="radio"/>
+<input aria-label="Fogueiras · 4" class="furniture-filter-input" id="furn-pt-fire" name="furniture-filter-pt" type="radio"/>
+<input aria-label="Jardineiras e muros verdes · 4" class="furniture-filter-input" id="furn-pt-garden" name="furniture-filter-pt" type="radio"/>
+<div aria-label="Filtrar mobiliário" class="furniture-filterbar" role="group">
+<label for="furn-pt-all">Todos · 9</label><label for="furn-pt-seats">Assentos · 3</label><label for="furn-pt-fire">Fogueiras · 4</label><label for="furn-pt-garden">Jardineiras e muros verdes · 4</label>
+</div>
+<div class="gabion-gallery-grid furniture-gallery-grid">
+<article class="gabion-card furniture-card furniture-seat">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Banco linear de pedra e madeira" class="img-zoom-toggle" id="zoom-gabion-furn-pt-02" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-furn-pt-02" title="Ampliar"><img alt="Banco linear de pedra e madeira — mobiliário externo em gabião decorativo" loading="lazy" src="biaaevtuw5i96tu3bor41p.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-furn-pt-02" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Banco linear de pedra e madeira" src="biaaevtuw5i96tu3bor41p.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · MOBILIÁRIO COM GABIÃO DECORATIVO</span><strong>Banco linear de pedra e madeira</strong><p>Dois bancos de linhas limpas, com bases de gabião e assentos de madeira.</p><p><b>PEDRA E MATERIALIDADE</b>Peças irregulares em tons terrosos e cinza criam uma base mineral texturizada. A madeira clara oferece contraste e uma superfície acolhedora.</p><p><b>ESTILO PROPOSTO</b>Proposta: banco modular de perfil baixo para parques e pátios, com bases de pedra separadas e tábuas contínuas.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Banco linear de pedra e madeira</h4><p>Dois bancos de linhas limpas, com bases de gabião e assentos de madeira.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-seat furniture-fire">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Área de estar curva com fogo central" class="img-zoom-toggle" id="zoom-gabion-furn-pt-03" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-furn-pt-03" title="Ampliar"><img alt="Área de estar curva com fogo central — mobiliário externo em gabião decorativo" loading="lazy" src="6nnsxay6cunfx4978fsmxz.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-furn-pt-03" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Área de estar curva com fogo central" src="6nnsxay6cunfx4978fsmxz.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · MOBILIÁRIO COM GABIÃO DECORATIVO</span><strong>Área de estar curva com fogo central</strong><p>Um espaço externo em U reúne assentos, pedra e uma fogueira central.</p><p><b>PEDRA E MATERIALIDADE</b>A mistura de cinza, ocre e marrom dá profundidade aos módulos curvos; as tábuas de madeira introduzem uma linha quente e contínua.</p><p><b>ESTILO PROPOSTO</b>Proposta: canto de convivência envolvente, com gabiões como assento e a fogueira separada como foco central.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Área de estar curva com fogo central</h4><p>Um espaço externo em U reúne assentos, pedra e uma fogueira central.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-seat furniture-fire">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Banco envolvente junto à fogueira" class="img-zoom-toggle" id="zoom-gabion-furn-pt-04" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-furn-pt-04" title="Ampliar"><img alt="Banco envolvente junto à fogueira — mobiliário externo em gabião decorativo" loading="lazy" src="a3fjw3u8pc6vzfl2ztoqzm.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-furn-pt-04" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Banco envolvente junto à fogueira" src="a3fjw3u8pc6vzfl2ztoqzm.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · MOBILIÁRIO COM GABIÃO DECORATIVO</span><strong>Banco envolvente junto à fogueira</strong><p>Um banco curvo de madeira se destaca diante de um muro claro de pedra.</p><p><b>PEDRA E MATERIALIDADE</b>Seixos claros e arredondados formam um fundo mineral bem definido. A malha metálica organiza a repetição sem esconder a textura da pedra.</p><p><b>ESTILO PROPOSTO</b>Proposta: pátio de linhas suaves e ritmo semicircular, combinando gabião, madeira e uma fogueira independente.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Banco envolvente junto à fogueira</h4><p>Um banco curvo de madeira se destaca diante de um muro claro de pedra.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-fire">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Fogueira cúbica em gabião" class="img-zoom-toggle" id="zoom-gabion-furn-pt-05" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-furn-pt-05" title="Ampliar"><img alt="Fogueira cúbica em gabião — mobiliário externo em gabião decorativo" loading="lazy" src="u4suvwi8ytc40vzvsf03lh.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-furn-pt-05" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Fogueira cúbica em gabião" src="u4suvwi8ytc40vzvsf03lh.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · MOBILIÁRIO COM GABIÃO DECORATIVO</span><strong>Fogueira cúbica em gabião</strong><p>Um volume geométrico de pedra clara emoldura uma caixa metálica para fogo.</p><p><b>PEDRA E MATERIALIDADE</b>Pedra clara em módulos compactos de malha, com variações suaves de bege e cinza. O contraste entre o enchimento mineral e o aço escuro define a peça.</p><p><b>ESTILO PROPOSTO</b>Proposta: fogueira escultural cúbica para pátios contemporâneos. A caixa de combustão deve ser um componente metálico separado do cesto de pedra.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Fogueira cúbica em gabião</h4><p>Um volume geométrico de pedra clara emoldura uma caixa metálica para fogo.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-fire">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Fogueira linear com módulos pétreos" class="img-zoom-toggle" id="zoom-gabion-furn-pt-06" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-furn-pt-06" title="Ampliar"><img alt="Fogueira linear com módulos pétreos — mobiliário externo em gabião decorativo" loading="lazy" src="073u2jmua0oqvp3cntbkrn.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-furn-pt-06" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Fogueira linear com módulos pétreos" src="073u2jmua0oqvp3cntbkrn.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · MOBILIÁRIO COM GABIÃO DECORATIVO</span><strong>Fogueira linear com módulos pétreos</strong><p>A caixa de aço para fogo se integra entre cestos de gabião e um muro baixo.</p><p><b>PEDRA E MATERIALIDADE</b>Peças claras e terrosas de formas naturais criam continuidade com o muro ao fundo. Separar visualmente a caixa metálica deixa pedra, malha e fogo bem definidos.</p><p><b>ESTILO PROPOSTO</b>Proposta: área de convivência no jardim com fogueira horizontal, laterais de gabião e paleta mineral acolhedora.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Fogueira linear com módulos pétreos</h4><p>A caixa de aço para fogo se integra entre cestos de gabião e um muro baixo.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-garden">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Jardineiras pétreas em pátio de tijolos" class="img-zoom-toggle" id="zoom-gabion-extra-pt-03" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-extra-pt-03" title="Ampliar"><img alt="Jardineiras pétreas em pátio de tijolos" loading="lazy" src="tglnprrvndbeg20dxfh5c9.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-extra-pt-03" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Jardineiras pétreas em pátio de tijolos" src="tglnprrvndbeg20dxfh5c9.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · GABIÃO DECORATIVO</span><strong>Jardineiras pétreas em pátio de tijolos</strong><p>Módulos de pedra com vegetação tropical organizam um pequeno pátio.</p><p><b>PEDRA E MATERIALIDADE</b>Peças escuras e irregulares contrastam com o tijolo vermelho. Um calibre regular e drenagem adequada ajudam a manter a jardineira visualmente organizada.</p><p><b>ESTILO PROPOSTO</b>Proposta: jardineiras modulares para pátios acolhedores, usando pedra, tijolo e folhagem como uma paleta material contínua.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Jardineiras pétreas em pátio de tijolos</h4><p>Módulos de pedra com vegetação tropical organizam um pequeno pátio.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-garden">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Muro-jardim vertical escalonado" class="img-zoom-toggle" id="zoom-gabion-extra-pt-04" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-extra-pt-04" title="Ampliar"><img alt="Muro-jardim vertical escalonado" loading="lazy" src="mtxo5pa2pl6s1x2letladu.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-extra-pt-04" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Muro-jardim vertical escalonado" src="mtxo5pa2pl6s1x2letladu.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · GABIÃO DECORATIVO</span><strong>Muro-jardim vertical escalonado</strong><p>Uma sequência de módulos de gabião plantados acompanha um caminho externo.</p><p><b>PEDRA E MATERIALIDADE</b>Seixos de vários tamanhos e tons —creme, cinza e terrosos— dão relevo entre as plantas. Os nichos verdes suavizam o ritmo da malha.</p><p><b>ESTILO PROPOSTO</b>Proposta: muro-jardim em módulos escalonados, alternando planos minerais e vegetação para criar profundidade.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Muro-jardim vertical escalonado</h4><p>Uma sequência de módulos de gabião plantados acompanha um caminho externo.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-garden">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Jardineira modular com nichos verdes" class="img-zoom-toggle" id="zoom-gabion-extra-pt-05" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-extra-pt-05" title="Ampliar"><img alt="Jardineira modular com nichos verdes" loading="lazy" src="ammtvfau1mfi3htrayweiq.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-extra-pt-05" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Jardineira modular com nichos verdes" src="ammtvfau1mfi3htrayweiq.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · GABIÃO DECORATIVO</span><strong>Jardineira modular com nichos verdes</strong><p>Um volume claro de gabião incorpora vegetação em nichos laterais.</p><p><b>PEDRA E MATERIALIDADE</b>Pedras claras e de escala contida definem o volume, enquanto o verde interrompe a trama mineral. Para uso como jardineira, preveja separação do substrato e drenagem.</p><p><b>ESTILO PROPOSTO</b>Proposta: jardineira escultural de linhas limpas para pátios e acessos, com estética natural e contemporânea.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Jardineira modular com nichos verdes</h4><p>Um volume claro de gabião incorpora vegetação em nichos laterais.</p></div>
+</article>
+<article class="gabion-card furniture-card furniture-garden">
+<div class="img-zoom-container">
+<input aria-label="Ampliar — Muro-jardineira linear" class="img-zoom-toggle" id="zoom-gabion-extra-pt-06" type="checkbox"/>
+<label class="img-zoom-thumb" for="zoom-gabion-extra-pt-06" title="Ampliar"><img alt="Muro-jardineira linear" loading="lazy" src="ic068453wbnh1sarbi2vhz.jpg"/><span aria-hidden="true" class="gabion-loupe"><svg viewbox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="m15.2 15.2 5 5"></path></svg></span></label>
+<label class="img-zoom-preview gabion-zoom-preview" for="zoom-gabion-extra-pt-06" title="Toque na imagem para fechar"><span class="gabion-zoom-dialog"><span class="gabion-photo-frame"><img alt="Muro-jardineira linear" src="ic068453wbnh1sarbi2vhz.jpg"/></span><span class="gabion-zoom-copy"><span class="gabion-topic">STONIQUE · GABIÃO DECORATIVO</span><strong>Muro-jardineira linear</strong><p>Um muro longo de gabião integra uma faixa contínua de plantio.</p><p><b>PEDRA E MATERIALIDADE</b>Pedra cinza angular de calibre visualmente homogêneo. A faixa vegetal oferece cor e escala junto ao pavimento; o tamanho deve ser compatível com a abertura da malha.</p><p><b>ESTILO PROPOSTO</b>Proposta: borda paisagística linear para caminhos e áreas públicas, com vegetação baixa sobre uma base mineral contínua.</p><span class="gabion-zoom-close">Toque na imagem para fechar</span></span></span></label>
+</div>
+<div class="gabion-card-caption"><h4>Muro-jardineira linear</h4><p>Um muro longo de gabião integra uma faixa contínua de plantio.</p></div>
+</article>
+</div>
+<div class="gabion-gallery-foot"><span>Seção preparada para novos projetos de mobiliário e paisagismo.</span><strong>9 PEÇAS · GABIÃO DECORATIVO</strong></div>
+</section>
+</section>
+<!-- 5. ADOQUINES -->
+<!-- 6. CENEFAS -->
+<!-- 7. ARTESANÍAS -->
+<!-- Contato: roteiro para consultas; envio online depende de canal aprovado. -->
+<section class="section-content" id="contacto">
+<details class="contact-accordion">
+<summary class="contact-accordion-summary"><span class="contact-accordion-title">Contato e consultas</span><span class="contact-accordion-action">Abrir opções de contato</span></summary>
+<div class="contact-accordion-body">
+<p>Para preparar uma consulta comercial sobre o portfólio, reúna estes dados:</p>
+<div class="proposal-grid">
+<article class="proposal-card"><h3>Dados de contato</h3><p><strong>Nome e sobrenome</strong></p><p>Empresa ou atividade (opcional)</p><p>E-mail ou telefone para resposta</p></article>
+<article class="proposal-card"><h3>Produto e projeto</h3><p>Família, produto e apresentação</p><p>Aplicação ou tipo de projeto</p><p>Quantidade estimada e unidade</p></article>
+<article class="proposal-card"><h3>Destino e prazo</h3><p>Cidade, província/estado e país</p><p>Destino de entrega e prazo estimado</p><p>Mensagem ou requisito adicional</p></article>
+</div>
+<div class="cta-strip"><strong>Quer enviar uma consulta comercial? O formulário é hospedado pela Tally.</strong><a href="https://tally.so/r/q428X5" rel="noopener noreferrer" target="_blank">Abrir formulário</a></div>
+<div class="trust-strip"><h3>Informações de privacidade</h3><p>O formulário inclui consentimento para usar seus dados para responder à consulta, informa a hospedagem na Tally e traz um link para a política de privacidade dela. Ainda está pendente um aviso de privacidade próprio da Stonique com contato responsável e prazo de retenção.</p></div>
+</div>
+</details>
+</section>
+</main>
+<footer class="py-12 bg-blue-950 text-white text-center mt-20 border-t border-yellow-500">
+<p class="text-xs uppercase tracking-[0.3em] opacity-60">© 2026 Stonique S.A.U.</p>
+</footer>
+<!-- zapia-chrome:v1 -->
+<div style="all:initial !important; display:block !important"><template shadowrootmode="closed"><div class="zapia-chrome">
+<a class="zapia-cta" dir="ltr" href="https://zapia.sng.link/Etwc1/3a6n/uqab?pcn=30bxaf5n&amp;pscn=badge&amp;_p=%7B%22message%22%3A%22Quero%20criar%20meu%20pr%C3%B3prio%20site%22%7D&amp;_fallback_redirect=https%3A%2F%2Fapp.zapia.com%2Fchat%3Fmessage%3DQuero%2520criar%2520meu%2520pr%25C3%25B3prio%2520site" rel="noopener" target="_blank">
+<span aria-hidden="true" class="zapia-cta__icon"><svg fill="none" height="1.25em" viewbox="0 0 104 104" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M97.7314 44.2849C97.7314 44.2147 97.7314 44.1446 97.7314 44.051C97.5213 38.5089 96.2604 32.9433 93.8556 27.6584C93.8088 27.5648 93.7622 27.4713 93.7388 27.3778C93.4352 26.723 93.1317 26.0916 92.7814 25.4602C92.758 25.4368 92.758 25.4134 92.7348 25.3667C92.5947 25.0861 92.4312 24.8054 92.291 24.5482C92.2678 24.5014 92.2444 24.4313 92.1977 24.3845H5.01166C5.01166 24.7119 5.01166 25.0627 5.03501 25.3901C5.03501 25.4602 5.03501 25.5537 5.03501 25.6239C5.03501 25.9513 5.05836 26.2787 5.08171 26.6061C5.08171 26.6294 5.08171 26.6528 5.08171 26.6762C5.10506 26.9802 5.12841 27.3076 5.15174 27.6116C5.15174 27.6818 5.15176 27.7753 5.17509 27.8455C5.19844 28.1728 5.22179 28.5002 5.26849 28.8276C5.26849 28.8744 5.26849 28.8977 5.29184 28.9445C5.31519 29.2485 5.3619 29.5291 5.38525 29.8098C5.38525 29.8799 5.4086 29.9501 5.4086 30.0436C5.4553 30.371 5.502 30.675 5.54868 31.0024C5.54868 31.0491 5.57203 31.0959 5.57203 31.1427C5.61873 31.4233 5.66543 31.7039 5.71213 31.9845C5.73548 32.0546 5.73548 32.1248 5.75883 32.1949C5.80553 32.4991 5.87559 32.8264 5.94562 33.1304C5.96897 33.1772 5.96897 33.2473 5.99232 33.2941C6.03902 33.5747 6.10907 33.8319 6.17912 34.1125C6.20247 34.1826 6.20247 34.2528 6.22582 34.3229C6.29586 34.6269 6.36591 34.9309 6.45931 35.2351C6.48266 35.3052 6.48266 35.352 6.50601 35.4221C6.57606 35.6793 6.6461 35.9599 6.71615 36.2172C6.7395 36.2873 6.7395 36.3341 6.76285 36.4042C6.85625 36.7082 6.9263 37.0122 7.01968 37.2928C7.04303 37.3629 7.06638 37.4331 7.08973 37.4798C7.18314 37.7372 7.25319 37.9944 7.34659 38.2517C7.36994 38.2984 7.39327 38.3686 7.39327 38.4153C7.48667 38.7193 7.60342 38.9999 7.69682 39.3039C7.72017 39.3741 7.74351 39.4442 7.76686 39.5143C7.86026 39.7716 7.95366 40.0288 8.07041 40.286C8.09376 40.3328 8.09376 40.3795 8.1171 40.4263C8.23385 40.7071 8.3506 41.011 8.46735 41.2916C8.49068 41.3618 8.53739 41.4319 8.56074 41.5021C8.67749 41.7593 8.79424 42.0165 8.88762 42.2737C8.91097 42.2971 8.91097 42.3439 8.93432 42.3673C9.05107 42.6479 9.19118 42.9285 9.33126 43.2092C9.35461 43.2794 9.40131 43.3495 9.42466 43.4197C9.54141 43.6769 9.6815 43.9341 9.8216 44.2147C9.8216 44.2381 9.84495 44.2615 9.84495 44.2849C9.98504 44.5655 10.1251 44.8227 10.2886 45.1033C10.3353 45.1734 10.3586 45.2436 10.4053 45.3137C10.5454 45.5943 10.7089 45.8515 10.849 46.1323C10.849 46.1323 10.849 46.1557 10.8723 46.1557C11.0124 46.4129 11.1759 46.6701 11.3393 46.9273C11.386 46.9975 11.4094 47.0676 11.456 47.1378C11.6195 47.395 11.7829 47.6522 11.9464 47.9094C11.9697 47.9328 11.9697 47.9562 11.9931 47.9796C12.1565 48.2134 12.2966 48.4472 12.4601 48.6812C12.5068 48.7514 12.5535 48.8215 12.6002 48.8683C12.7636 49.1255 12.9504 49.3593 13.1138 49.6166C13.1372 49.6633 13.1605 49.6867 13.1839 49.7335C13.3473 49.9439 13.5108 50.1778 13.6509 50.3882C13.6976 50.4584 13.7443 50.5051 13.791 50.5753C13.9778 50.8091 14.1646 51.0663 14.3513 51.3003C14.3747 51.3471 14.4215 51.3938 14.4447 51.4172C14.6082 51.6277 14.7716 51.8381 14.9351 52.0252C14.9818 52.072 15.0285 52.1421 15.0752 52.1889C15.262 52.4227 15.4721 52.6565 15.659 52.8904C15.7056 52.9371 15.7523 52.9839 15.7757 53.0307C15.9391 53.2177 16.1258 53.4282 16.2893 53.6153C16.3361 53.662 16.3827 53.7322 16.4295 53.7789C16.6396 53.9894 16.8263 54.2234 17.0364 54.4338C17.0832 54.4806 17.13 54.5274 17.1766 54.5741C17.3635 54.7612 17.5268 54.9483 17.7136 55.1353C17.7603 55.1821 17.8071 55.2289 17.8537 55.2756C18.0638 55.4861 18.2741 55.6965 18.5074 55.907C18.5542 55.9537 18.6242 56.0005 18.671 56.0707C18.8577 56.2577 19.0446 56.4214 19.2313 56.6085C19.2781 56.6552 19.3247 56.702 19.3715 56.7255C19.605 56.936 19.8151 57.1231 20.0486 57.3335C20.0952 57.3803 20.1653 57.427 20.2353 57.4738C20.4455 57.6375 20.6324 57.8246 20.8425 57.9882C20.8891 58.0116 20.9125 58.0584 20.9592 58.0818C21.1927 58.2688 21.4262 58.4559 21.6597 58.643C21.7297 58.6897 21.7765 58.7365 21.8465 58.7833C21.9866 58.9002 22.1266 58.9937 22.2667 59.0873L66.0933 39.0935L26.0494 61.683L16.3361 67.1783C17.0598 68.488 17.8537 69.7507 18.7177 70.9668C19.7683 72.4867 20.9125 73.8898 22.1266 75.246C22.3601 75.5033 22.617 75.784 22.8505 76.0412C24.088 77.3507 25.3956 78.5434 26.7731 79.6658C27.5903 80.3439 28.431 80.9753 29.2948 81.5834C30.7425 82.5889 32.2368 83.5242 33.778 84.3428C34.2448 84.6 34.7118 84.8338 35.1789 85.0677C36.2762 85.6055 37.3737 86.0965 38.5179 86.5408C38.8447 86.6579 39.1716 86.7982 39.4985 86.9151C39.8953 87.0554 40.3157 87.1957 40.736 87.336C41.2496 87.4997 41.74 87.6634 42.2538 87.8037C43.6546 88.2012 45.1022 88.5519 46.55 88.8091C46.9003 88.8793 47.2271 88.9261 47.5774 88.9728C49.632 89.3003 51.7335 89.464 53.8349 89.4874C61.1899 89.5576 68.6383 87.7569 75.503 83.8749C78.3983 82.2381 81.0134 80.3439 83.3717 78.1925C83.9554 77.6547 84.5158 77.1169 85.0762 76.5791C86.0802 75.55 87.0376 74.4978 87.9248 73.3988C88.2984 72.9543 88.6487 72.4867 88.9756 72.0424C89.4892 71.3643 89.9562 70.6861 90.4232 69.9845C90.4699 69.9377 90.4932 69.8676 90.5399 69.8208C90.8902 69.283 91.2404 68.7452 91.5673 68.2074C91.9176 67.6228 92.2678 67.0147 92.5947 66.4067C92.5947 66.4067 92.5947 66.3833 92.6181 66.3833C92.8516 65.939 93.0851 65.4947 93.2952 65.0505C93.4586 64.7229 93.6221 64.3722 93.7854 64.0214C94.0891 63.3667 94.3692 62.712 94.6261 62.0337C94.7194 61.7999 94.8128 61.5894 94.8829 61.3556C95.2098 60.5372 95.4899 59.6954 95.7468 58.8534C95.7702 58.7833 95.7936 58.7131 95.8168 58.643C96.7274 55.6498 97.3346 52.563 97.6147 49.4295V49.4061C97.7314 47.6522 97.7782 45.9686 97.7314 44.2849Z" fill="#fff"></path></svg></span>
+<span class="zapia-cta__label"><bdi>Feito com Zapia</bdi></span>
+<span class="zapia-cta__action">Crie o seu grátis <span aria-hidden="true" class="zapia-cta__arrow">→</span></span>
+</a>
+<style>
+  @keyframes zapia-badge-in {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes zapia-badge-out {
+    to { opacity: 0; visibility: hidden; }
+  }
+  /* The footer band publishes a view-timeline named --zapia-footer
+     (see footer.py — the name is a cross-module contract); hoisting
+     its scope to the shared .zapia-chrome wrapper (chrome.py) lets
+     this sibling badge consume it. Named timelines are tree-scoped,
+     which is exactly why both blocks share one shadow root. */
+  .zapia-chrome { timeline-scope: --zapia-footer; }
+  /* Isolation reset FIRST (same rationale as the footer band's): the
+     badge renders inside arbitrary UGC pages — host uppercase, letter
+     spacing, link underlines, or margins must not restyle it. The
+     component rules below share its specificity and win by order. */
+  .zapia-cta, .zapia-cta * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float: none;
+    box-sizing: border-box;
+    text-transform: none;
+    text-indent: 0;
+    text-shadow: none;
+    letter-spacing: normal;
+    font-style: normal;
+  }
+  .zapia-cta {
+    position: fixed;
+    inset-block-end: max(20px, env(safe-area-inset-bottom, 20px));
+    inset-inline-end: max(20px, env(safe-area-inset-right, 20px));
+    z-index: 2147483600;
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #08090A;
+    color: #fff;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: background 0.22s ease, box-shadow 0.22s ease, transform 0.18s cubic-bezier(0.2, 0.7, 0.3, 1);
+    animation: zapia-badge-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 2.5s both;
+  }
+  /* Fade the badge out as the footer band scrolls into view — its CTA
+     takes over, so the two never pitch side by side. Scroll-driven
+     animations only (Chrome/Edge; Safari/Firefox keep the badge and
+     fall back to the footer spacer below). zapia-badge-out is listed
+     last so its opacity wins once the entry range starts. */
+  @supports (animation-timeline: view()) {
+    .zapia-cta {
+      animation-name: zapia-badge-in, zapia-badge-out;
+      animation-duration: 0.7s, auto;
+      animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1), linear;
+      animation-delay: 2.5s, 0s;
+      animation-fill-mode: both, both;
+      animation-timeline: auto, --zapia-footer;
+      animation-range: normal, entry 0% entry 75%;
+    }
+  }
+  .zapia-cta:hover {
+    background: #0C1210;
+    box-shadow: 0 14px 32px -14px rgba(15, 164, 124, 0.75);
+  }
+  .zapia-cta:focus-visible {
+    box-shadow: 0 0 0 3px #050505, 0 0 0 5px rgba(15, 164, 124, 0.85);
+    outline: none;
+  }
+  .zapia-cta:active { transform: scale(0.99); }
+  .zapia-cta__icon {
+    flex: none;
+    align-self: stretch;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 14px 12px;
+    background: #0FA47C;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: background 0.22s ease, box-shadow 0.22s ease;
+  }
+  .zapia-cta:hover .zapia-cta__icon { background: #14BE91; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4); }
+  .zapia-cta:active .zapia-cta__icon { background: #0C8E6B; box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35); }
+  .zapia-cta__icon svg { width: 18px; height: 18px; display: block; }
+  .zapia-cta__label { flex: none; padding-inline: 12px 16px; font-weight: 600; }
+  .zapia-cta__action {
+    flex: none;
+    align-self: stretch;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    font-weight: 700;
+    color: #fff;
+    background: #0FA47C;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: background 0.22s ease, box-shadow 0.22s ease;
+  }
+  .zapia-cta:hover .zapia-cta__action { background: #14BE91; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4); }
+  .zapia-cta:active .zapia-cta__action { background: #0C8E6B; box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35); }
+  .zapia-cta__arrow { display: inline-block; transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1); }
+  .zapia-cta:hover:not(:active) .zapia-cta__arrow { transform: translateX(4px); }
+  .zapia-cta[dir="rtl"]:hover:not(:active) .zapia-cta__arrow { transform: translateX(-4px); }
+  @media (max-width: 480px) {
+    .zapia-cta {
+      inset-inline-start: 0;
+      inset-inline-end: 0;
+      margin-inline: auto;
+      width: fit-content;
+      min-height: 44px;
+    }
+    .zapia-cta__label { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .zapia-cta, .zapia-cta__arrow, .zapia-cta__icon, .zapia-cta__action { animation: none; transition: none; }
+    .zapia-cta:active { transform: none; }
+    .zapia-cta:hover:not(:active) .zapia-cta__arrow { transform: none; }
+    /* Keep the scroll-position fade: it tracks the user's own scroll,
+       not autonomous motion, and it's what prevents the double CTA. */
+    @supports (animation-timeline: view()) {
+      .zapia-cta {
+        animation-name: zapia-badge-out;
+        animation-duration: auto;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        animation-timeline: --zapia-footer;
+        animation-range: entry 0% entry 75%;
+      }
+    }
+  }
+</style>
+<footer class="zapia-band">
+<div class="zapia-band__row">
+<div class="zapia-band__brand">
+<span aria-hidden="true" class="zapia-band__mark"><svg fill="none" height="24" viewbox="0 0 104 104" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M97.7314 44.2849C97.7314 44.2147 97.7314 44.1446 97.7314 44.051C97.5213 38.5089 96.2604 32.9433 93.8556 27.6584C93.8088 27.5648 93.7622 27.4713 93.7388 27.3778C93.4352 26.723 93.1317 26.0916 92.7814 25.4602C92.758 25.4368 92.758 25.4134 92.7348 25.3667C92.5947 25.0861 92.4312 24.8054 92.291 24.5482C92.2678 24.5014 92.2444 24.4313 92.1977 24.3845H5.01166C5.01166 24.7119 5.01166 25.0627 5.03501 25.3901C5.03501 25.4602 5.03501 25.5537 5.03501 25.6239C5.03501 25.9513 5.05836 26.2787 5.08171 26.6061C5.08171 26.6294 5.08171 26.6528 5.08171 26.6762C5.10506 26.9802 5.12841 27.3076 5.15174 27.6116C5.15174 27.6818 5.15176 27.7753 5.17509 27.8455C5.19844 28.1728 5.22179 28.5002 5.26849 28.8276C5.26849 28.8744 5.26849 28.8977 5.29184 28.9445C5.31519 29.2485 5.3619 29.5291 5.38525 29.8098C5.38525 29.8799 5.4086 29.9501 5.4086 30.0436C5.4553 30.371 5.502 30.675 5.54868 31.0024C5.54868 31.0491 5.57203 31.0959 5.57203 31.1427C5.61873 31.4233 5.66543 31.7039 5.71213 31.9845C5.73548 32.0546 5.73548 32.1248 5.75883 32.1949C5.80553 32.4991 5.87559 32.8264 5.94562 33.1304C5.96897 33.1772 5.96897 33.2473 5.99232 33.2941C6.03902 33.5747 6.10907 33.8319 6.17912 34.1125C6.20247 34.1826 6.20247 34.2528 6.22582 34.3229C6.29586 34.6269 6.36591 34.9309 6.45931 35.2351C6.48266 35.3052 6.48266 35.352 6.50601 35.4221C6.57606 35.6793 6.6461 35.9599 6.71615 36.2172C6.7395 36.2873 6.7395 36.3341 6.76285 36.4042C6.85625 36.7082 6.9263 37.0122 7.01968 37.2928C7.04303 37.3629 7.06638 37.4331 7.08973 37.4798C7.18314 37.7372 7.25319 37.9944 7.34659 38.2517C7.36994 38.2984 7.39327 38.3686 7.39327 38.4153C7.48667 38.7193 7.60342 38.9999 7.69682 39.3039C7.72017 39.3741 7.74351 39.4442 7.76686 39.5143C7.86026 39.7716 7.95366 40.0288 8.07041 40.286C8.09376 40.3328 8.09376 40.3795 8.1171 40.4263C8.23385 40.7071 8.3506 41.011 8.46735 41.2916C8.49068 41.3618 8.53739 41.4319 8.56074 41.5021C8.67749 41.7593 8.79424 42.0165 8.88762 42.2737C8.91097 42.2971 8.91097 42.3439 8.93432 42.3673C9.05107 42.6479 9.19118 42.9285 9.33126 43.2092C9.35461 43.2794 9.40131 43.3495 9.42466 43.4197C9.54141 43.6769 9.6815 43.9341 9.8216 44.2147C9.8216 44.2381 9.84495 44.2615 9.84495 44.2849C9.98504 44.5655 10.1251 44.8227 10.2886 45.1033C10.3353 45.1734 10.3586 45.2436 10.4053 45.3137C10.5454 45.5943 10.7089 45.8515 10.849 46.1323C10.849 46.1323 10.849 46.1557 10.8723 46.1557C11.0124 46.4129 11.1759 46.6701 11.3393 46.9273C11.386 46.9975 11.4094 47.0676 11.456 47.1378C11.6195 47.395 11.7829 47.6522 11.9464 47.9094C11.9697 47.9328 11.9697 47.9562 11.9931 47.9796C12.1565 48.2134 12.2966 48.4472 12.4601 48.6812C12.5068 48.7514 12.5535 48.8215 12.6002 48.8683C12.7636 49.1255 12.9504 49.3593 13.1138 49.6166C13.1372 49.6633 13.1605 49.6867 13.1839 49.7335C13.3473 49.9439 13.5108 50.1778 13.6509 50.3882C13.6976 50.4584 13.7443 50.5051 13.791 50.5753C13.9778 50.8091 14.1646 51.0663 14.3513 51.3003C14.3747 51.3471 14.4215 51.3938 14.4447 51.4172C14.6082 51.6277 14.7716 51.8381 14.9351 52.0252C14.9818 52.072 15.0285 52.1421 15.0752 52.1889C15.262 52.4227 15.4721 52.6565 15.659 52.8904C15.7056 52.9371 15.7523 52.9839 15.7757 53.0307C15.9391 53.2177 16.1258 53.4282 16.2893 53.6153C16.3361 53.662 16.3827 53.7322 16.4295 53.7789C16.6396 53.9894 16.8263 54.2234 17.0364 54.4338C17.0832 54.4806 17.13 54.5274 17.1766 54.5741C17.3635 54.7612 17.5268 54.9483 17.7136 55.1353C17.7603 55.1821 17.8071 55.2289 17.8537 55.2756C18.0638 55.4861 18.2741 55.6965 18.5074 55.907C18.5542 55.9537 18.6242 56.0005 18.671 56.0707C18.8577 56.2577 19.0446 56.4214 19.2313 56.6085C19.2781 56.6552 19.3247 56.702 19.3715 56.7255C19.605 56.936 19.8151 57.1231 20.0486 57.3335C20.0952 57.3803 20.1653 57.427 20.2353 57.4738C20.4455 57.6375 20.6324 57.8246 20.8425 57.9882C20.8891 58.0116 20.9125 58.0584 20.9592 58.0818C21.1927 58.2688 21.4262 58.4559 21.6597 58.643C21.7297 58.6897 21.7765 58.7365 21.8465 58.7833C21.9866 58.9002 22.1266 58.9937 22.2667 59.0873L66.0933 39.0935L26.0494 61.683L16.3361 67.1783C17.0598 68.488 17.8537 69.7507 18.7177 70.9668C19.7683 72.4867 20.9125 73.8898 22.1266 75.246C22.3601 75.5033 22.617 75.784 22.8505 76.0412C24.088 77.3507 25.3956 78.5434 26.7731 79.6658C27.5903 80.3439 28.431 80.9753 29.2948 81.5834C30.7425 82.5889 32.2368 83.5242 33.778 84.3428C34.2448 84.6 34.7118 84.8338 35.1789 85.0677C36.2762 85.6055 37.3737 86.0965 38.5179 86.5408C38.8447 86.6579 39.1716 86.7982 39.4985 86.9151C39.8953 87.0554 40.3157 87.1957 40.736 87.336C41.2496 87.4997 41.74 87.6634 42.2538 87.8037C43.6546 88.2012 45.1022 88.5519 46.55 88.8091C46.9003 88.8793 47.2271 88.9261 47.5774 88.9728C49.632 89.3003 51.7335 89.464 53.8349 89.4874C61.1899 89.5576 68.6383 87.7569 75.503 83.8749C78.3983 82.2381 81.0134 80.3439 83.3717 78.1925C83.9554 77.6547 84.5158 77.1169 85.0762 76.5791C86.0802 75.55 87.0376 74.4978 87.9248 73.3988C88.2984 72.9543 88.6487 72.4867 88.9756 72.0424C89.4892 71.3643 89.9562 70.6861 90.4232 69.9845C90.4699 69.9377 90.4932 69.8676 90.5399 69.8208C90.8902 69.283 91.2404 68.7452 91.5673 68.2074C91.9176 67.6228 92.2678 67.0147 92.5947 66.4067C92.5947 66.4067 92.5947 66.3833 92.6181 66.3833C92.8516 65.939 93.0851 65.4947 93.2952 65.0505C93.4586 64.7229 93.6221 64.3722 93.7854 64.0214C94.0891 63.3667 94.3692 62.712 94.6261 62.0337C94.7194 61.7999 94.8128 61.5894 94.8829 61.3556C95.2098 60.5372 95.4899 59.6954 95.7468 58.8534C95.7702 58.7833 95.7936 58.7131 95.8168 58.643C96.7274 55.6498 97.3346 52.563 97.6147 49.4295V49.4061C97.7314 47.6522 97.7782 45.9686 97.7314 44.2849Z" fill="#fff"></path></svg></span>
+<span class="zapia-band__copy">
+<span class="zapia-band__headline">Seu site, em um minuto</span>
+<span class="zapia-band__sub">Você descreve em uma mensagem e ele fica no ar. Grátis.</span>
+</span>
+</div>
+<a class="zapia-band-cta" dir="ltr" href="https://zapia.sng.link/Etwc1/3a6n/uqab?pcn=30bxaf5n&amp;pscn=footer&amp;_p=%7B%22message%22%3A%22Quero%20criar%20meu%20pr%C3%B3prio%20site%22%7D&amp;_fallback_redirect=https%3A%2F%2Fapp.zapia.com%2Fchat%3Fmessage%3DQuero%2520criar%2520meu%2520pr%25C3%25B3prio%2520site" rel="noopener" target="_blank">Crie o seu grátis <span aria-hidden="true" class="zapia-band-cta__arrow">→</span></a>
+</div>
+<div class="zapia-band__disclaimer">
+    Esta página foi publicada por um usuário do Zapia. Seu conteúdo não foi escrito, revisado nem endossado pelo Zapia.
+  </div>
+<div aria-hidden="true" class="zapia-band-clear"></div>
+<style>
+    /* Isolation reset FIRST: the band renders inside arbitrary UGC
+       pages, so host rules like `footer { display: flex }` or global
+       uppercase/letter-spacing must not restyle it (prod bug: a host
+       flex rule laid the disclaimer beside the CTA). Same specificity
+       as the component rules below, so those win by order. */
+    .zapia-band, .zapia-band * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      float: none;
+      box-sizing: border-box;
+      text-transform: none;
+      text-indent: 0;
+      text-shadow: none;
+      letter-spacing: normal;
+      font-style: normal;
+    }
+    .zapia-band {
+      display: block;
+      text-align: start;
+      background: #000;
+      border-top: 1px solid rgba(15, 164, 124, 0.18);
+      padding: 28px 24px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      line-height: 1.4;
+      view-timeline-name: --zapia-footer;
+    }
+    .zapia-band__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px 28px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .zapia-band__brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .zapia-band__mark {
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      background: #0FA47C;
+    }
+    .zapia-band__copy { display: flex; flex-direction: column; text-align: start; }
+    .zapia-band__headline { font-size: 16px; font-weight: 700; letter-spacing: -0.02em; color: #fff; }
+    .zapia-band__sub { margin-top: 3px; font-size: 13px; color: #6E7C78; }
+    /* CTA states are the product spec's option A ("Elevación y halo"):
+       lift + green halo + inner light on hover, double outer ring on
+       focus, sink on active — shared with the 404 page's CTA. */
+    .zapia-band-cta {
+      flex: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 26px;
+      border-radius: 999px;
+      background: #0FA47C;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1), background 0.22s ease, box-shadow 0.22s ease;
+    }
+    .zapia-band-cta:hover {
+      background: #12B489;
+      transform: translateY(-2px);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28), 0 12px 32px -10px rgba(15, 164, 124, 0.65), 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .zapia-band-cta:focus-visible {
+      box-shadow: 0 0 0 3px #050505, 0 0 0 5px rgba(15, 164, 124, 0.9);
+      outline: none;
+    }
+    .zapia-band-cta:active {
+      background: #0C8E6B;
+      transform: scale(0.985);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.32);
+    }
+    .zapia-band-cta__arrow { display: inline-block; transition: transform 0.22s cubic-bezier(0.2, 0.7, 0.3, 1); }
+    .zapia-band-cta:hover:not(:active) .zapia-band-cta__arrow { transform: translateX(4px); }
+    .zapia-band-cta[dir="rtl"]:hover:not(:active) .zapia-band-cta__arrow { transform: translateX(-4px); }
+    .zapia-band__disclaimer {
+      display: block;
+      max-width: 640px;
+      margin: 18px auto 0;
+      text-align: center;
+      font-size: 11.5px; /* px, not rem — the host controls the root font size */
+      line-height: 1.5;
+      color: #5a6360;
+    }
+    .zapia-band-clear { display: block; height: 0; }
+    @media (max-width: 640px) {
+      /* Same shape, stacked: brand row stays start-aligned on top, the
+         CTA drops below it full-width — never a flex-wrap reshuffle. */
+      .zapia-band__row { flex-direction: column; align-items: stretch; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .zapia-band-cta, .zapia-band-cta__arrow { transition: none; }
+      .zapia-band-cta:hover { transform: none; }
+      .zapia-band-cta:hover:not(:active) .zapia-band-cta__arrow { transform: none; }
+    }
+    @supports not (animation-timeline: view()) {
+      @media (max-width: 480px) {
+        /* No scroll-driven badge fade here — keep the floating pill
+           clear of the band's CTA and disclaimer. */
+        .zapia-band-clear { height: 72px; }
+      }
+    }
+  </style>
+</footer>
+</div></template></div>
+<!-- /zapia-chrome:v1 -->
+</body>
+</html>
