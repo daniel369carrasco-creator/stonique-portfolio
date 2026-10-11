@@ -5,7 +5,7 @@ Portafolio ES/EN/PT en GitHub Pages. Las 43 imágenes de producto y los dos fond
 ## Cómo actualizar
 - Edita `index.html` (ES), `index-en.html` (EN) o `index-pt.html` (PT) desde GitHub para cambiar textos. Los cambios confirmados en `staging` actualizan la vista previa.
 - Edita `resources.json` para sumar o corregir guías. Los recursos aparecen en la página del idioma correspondiente.
-- Para agregar video o audio, sube los archivos a `media/` y agrega una entrada en `resources.json`: `type` puede ser `video`, `audio`, `youtube` o `tutorial`. Los archivos directos se reproducen con controles dentro de la página; YouTube se inserta en el sitio.
+- Para agregar video o audio, crea la carpeta `media/` si todavía no existe, sube allí los archivos y agrega una entrada en `resources.json`: `type` puede ser `video`, `audio`, `youtube` o `tutorial`. Los archivos directos se reproducen con controles dentro de la página; YouTube se inserta en el sitio.
 - Los formatos directos admitidos dependen del navegador; normalmente MP4/WebM para video y MP3/OGG para audio. Mantén archivos ligeros y verifica derechos, subtítulos y descripción antes de publicarlos.
 - El formulario comercial está incrustado desde Tally; las respuestas llegan a la cuenta de Tally asociada al formulario.
 
